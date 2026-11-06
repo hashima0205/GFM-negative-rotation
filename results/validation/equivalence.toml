@@ -1,0 +1,7 @@
+droop_mp = 0.05
+vsm_H = 2.5
+independent_physical_evidence = false
+max_rhs_error = 1.734723475976807e-18
+droop_tau_p = 0.25
+vsm_D1 = 0.0
+vsm_D2 = 0.0

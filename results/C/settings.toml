@@ -1,0 +1,14 @@
+strict = false
+actual_horizon_s = 1000.0
+
+[case]
+taup = ""
+omega_d = "50"
+mp = "0.05"
+D2 = "100"
+case = "C"
+config = "common.toml"
+horizon = "1000"
+control = "VSM"
+D1 = "0"
+H = "2.5"

@@ -1,0 +1,2 @@
+max_algebraic_residual,max_differential_jump,max_washout_jump,reltol,abstol,dtmax_s,regular_post_save_s,horizon_s,runtime_s
+7.016398710624188e-15,0.0,0.0,1.0e-9,1.0e-11,0.005,0.02,1000.0,20.110082149505615

@@ -1,0 +1,8 @@
+.work/
+__pycache__/
+*.pyc
+.julia/
+.venv/
+.cache/
+results/*_strict/states.csv.gz
+results/original_*/states.csv.gz

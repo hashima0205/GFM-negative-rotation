@@ -1,0 +1,4 @@
+stage,differential_jump,washout_jump,accepted_internal_steps,rejected_internal_steps
+pre,0.0,0.0,200,0
+fault,0.0,0.0,625,23
+post,0.0,0.0,200704,32

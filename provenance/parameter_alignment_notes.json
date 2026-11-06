@@ -1,0 +1,43 @@
+{
+  "changed_pre_indices": [
+    "VIndex(1, :inv1\u208adroop\u208aKp)",
+    "VIndex(1, :inv1\u208adroop\u208a\u03c4_p)",
+    "VIndex(1, :inv1\u208adroop\u208aPset)",
+    "VIndex(2, :inv2\u208adroop\u208aKp)",
+    "VIndex(2, :inv2\u208adroop\u208a\u03c4_p)",
+    "VIndex(2, :inv2\u208adroop\u208aPset)",
+    "VIndex(3, :inv3\u208adroop\u208aKp)",
+    "VIndex(3, :inv3\u208adroop\u208a\u03c4_p)",
+    "VIndex(3, :inv3\u208adroop\u208aPset)",
+    "VIndex(4, :fault_load\u208at_clear_p)",
+    "VIndex(5, :PQLoad\u208aQ_load_p)",
+    "VIndex(5, :PQLoad\u208aP_load_p)",
+    "VIndex(7, :inv7\u208adroop\u208aKp)",
+    "VIndex(7, :inv7\u208adroop\u208a\u03c4_p)",
+    "VIndex(7, :inv7\u208adroop\u208aPset)",
+    "line2:line_sym\u208aR",
+    "line2:line_sym\u208aX",
+    "line3:line_sym\u208aR",
+    "line3:line_sym\u208aX"
+  ],
+  "source_fault_duration_s": 0.1,
+  "common_fault_duration_s": 0.15,
+  "source_saved_t_clear_parameter_s": 1.2,
+  "source_actual_clearing_from_segment_schedule_s": 1.1,
+  "source_timer_parameter_used": false,
+  "reason": "Explicit fault enable flags and the segment schedule govern the event; the dormant saved timer is not the actual clearing time.",
+  "same_common_parameters_AB_C": "all network, load, capacitor, P/Q, inner controls, current-command limit and event parameters; only declared outer-control settings differ",
+  "edge_numeric_index_to_original_line_id": [
+    1,
+    5,
+    6,
+    9,
+    8,
+    4,
+    7,
+    2,
+    3,
+    11,
+    10
+  ]
+}

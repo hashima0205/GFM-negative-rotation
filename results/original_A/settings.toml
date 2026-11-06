@@ -1,0 +1,14 @@
+strict = false
+actual_horizon_s = 1000.0
+
+[case]
+taup = "0.02"
+omega_d = ""
+mp = "0.02"
+D2 = "0"
+case = "original_A"
+config = "original_droop.toml"
+horizon = "1000"
+control = "Droop"
+D1 = "0"
+H = ""

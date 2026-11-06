@@ -1,0 +1,2 @@
+snapshot,case,time_absolute_s,t_post_s,stage,is_equilibrium,control_conditions,H_s,D1,D2,load_G_pu,capacitor_B_pu,fault_G_pu
+B_post_1s,B,2.15,1.0,post,0,"Droop: tau_p=1.00 s, mp=5%",,0,0,2.268230115233306,1.0,0

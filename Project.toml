@@ -1,0 +1,6 @@
+[deps]
+OrdinaryDiffEq = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
+
+[compat]
+julia = "1.12"
+OrdinaryDiffEq = "=6.108.0"

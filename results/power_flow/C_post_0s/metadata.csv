@@ -1,0 +1,2 @@
+snapshot,case,time_absolute_s,t_post_s,stage,is_equilibrium,control_conditions,H_s,D1,D2,load_G_pu,capacitor_B_pu,fault_G_pu
+C_post_0s,C,1.15,0.0,post,0,"VSM: H=2.5 s, mp=5%, D1=0, D2=100",2.5,0,100,2.268230115233306,1.0,0

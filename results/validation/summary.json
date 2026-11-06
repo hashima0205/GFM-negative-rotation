@@ -1,0 +1,14 @@
+{
+  "all_passed": true,
+  "comparison_count": 230,
+  "max_absolute_error": 3.829063643934205e-08,
+  "groups": {
+    "A_accuracy": 3.127386127843579e-10,
+    "B_accuracy": 6.782101991120726e-09,
+    "C_D1_10_source_reproduction": 3.052655905833035e-10,
+    "C_accuracy": 3.829063643934205e-08,
+    "C_source_reproduction": 4.632338512777778e-09,
+    "original_droop_A_migration": 4.4415626732075e-10,
+    "original_droop_B_migration": 6.533582563861273e-10
+  }
+}

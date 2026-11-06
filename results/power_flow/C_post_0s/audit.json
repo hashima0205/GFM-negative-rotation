@@ -1,0 +1,16 @@
+{
+  "GFM_terminal_P_pu": 3.4825483529885113,
+  "slack_P_pu": -0.20889756088234457,
+  "load_P_pu": 2.6253015179551054,
+  "capacitor_Q_pu": 1.1574229176853477,
+  "fault_P_pu": 0.0,
+  "line_P_loss_pu": 0.6483492741510608,
+  "line_Q_loss_pu": 2.4196724321821628,
+  "P_balance_error_pu": 6.661338147750939e-16,
+  "max_nodal_power_error_pu": 1.9860273225978185e-15,
+  "max_KCL_current_error_pu": 1.508024561581292e-15,
+  "max_nodal_complex_power_error_pu": 1.6896504919971133e-15,
+  "Q_balance_error_pu": 4.440892098500626e-16,
+  "kind": "saved dynamic snapshot",
+  "time_absolute_s": 1.15
+}

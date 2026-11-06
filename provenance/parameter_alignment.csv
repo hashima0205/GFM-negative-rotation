@@ -1,0 +1,658 @@
+stage,index_legacy,name,original_A,original_B,C,different_from_original
+pre,1,"VIndex(1, :inv1₊droop₊Kp)",7.5398223686155035,7.5398223686155035,18.84955592153876,True
+pre,2,"VIndex(1, :inv1₊droop₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+pre,3,"VIndex(1, :inv1₊droop₊Kq)",0.05,0.05,0.05,False
+pre,4,"VIndex(1, :inv1₊droop₊τ_q)",0.02,0.02,0.02,False
+pre,5,"VIndex(1, :inv1₊droop₊Vset)",1.0,1.0,1.0,False
+pre,6,"VIndex(1, :inv1₊droop₊τ_p)",0.02,1.0,0.25,True
+pre,7,"VIndex(1, :inv1₊droop₊Qset)",0.16370094127236381,0.16370094127236381,0.16370094127236381,False
+pre,8,"VIndex(1, :inv1₊droop₊Pset)",0.7049006414424951,0.7049006414424951,0.5,True
+pre,9,"VIndex(1, :inv1₊vsrc₊CC1_F)",1.0,1.0,1.0,False
+pre,10,"VIndex(1, :inv1₊vsrc₊CC1_KI)",0.0018,0.0018,0.0018,False
+pre,11,"VIndex(1, :inv1₊vsrc₊C)",0.1086,0.1086,0.1086,False
+pre,12,"VIndex(1, :inv1₊vsrc₊CC1_KP)",0.9817,0.9817,0.9817,False
+pre,13,"VIndex(1, :inv1₊vsrc₊X_virt)",0.0,0.0,0.0,False
+pre,14,"VIndex(1, :inv1₊vsrc₊Rf)",0.0139,0.0139,0.0139,False
+pre,15,"VIndex(1, :inv1₊vsrc₊CC1_Fcoupl)",1.0,1.0,1.0,False
+pre,16,"VIndex(1, :inv1₊vsrc₊I_max)",1.2,1.2,1.2,False
+pre,17,"VIndex(1, :inv1₊vsrc₊Lf)",0.0196,0.0196,0.0196,False
+pre,18,"VIndex(1, :inv1₊vsrc₊Lg)",0.0209,0.0209,0.0209,False
+pre,19,"VIndex(1, :inv1₊vsrc₊VC_KP)",1.4476,1.4476,1.4476,False
+pre,20,"VIndex(1, :inv1₊vsrc₊VC_F)",1.0,1.0,1.0,False
+pre,21,"VIndex(1, :inv1₊vsrc₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+pre,22,"VIndex(1, :inv1₊vsrc₊Rg)",0.01,0.01,0.01,False
+pre,23,"VIndex(1, :inv1₊vsrc₊R_virt)",0.0,0.0,0.0,False
+pre,24,"VIndex(1, :inv1₊vsrc₊VC_Fcoupl)",1.0,1.0,1.0,False
+pre,25,"VIndex(1, :inv1₊vsrc₊VC_KI)",0.0273,0.0273,0.0273,False
+pre,26,"VIndex(1, :inv1₊vsrc₊filter₊connected)",1.0,1.0,1.0,False
+pre,27,"VIndex(2, :inv2₊droop₊Kp)",7.5398223686155035,7.5398223686155035,18.84955592153876,True
+pre,28,"VIndex(2, :inv2₊droop₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+pre,29,"VIndex(2, :inv2₊droop₊Kq)",0.05,0.05,0.05,False
+pre,30,"VIndex(2, :inv2₊droop₊τ_q)",0.02,0.02,0.02,False
+pre,31,"VIndex(2, :inv2₊droop₊Vset)",1.0,1.0,1.0,False
+pre,32,"VIndex(2, :inv2₊droop₊τ_p)",0.02,1.0,0.25,True
+pre,33,"VIndex(2, :inv2₊droop₊Qset)",0.197690040391902,0.197690040391902,0.197690040391902,False
+pre,34,"VIndex(2, :inv2₊droop₊Pset)",0.10025606988910452,0.10025606988910452,0.4,True
+pre,35,"VIndex(2, :inv2₊vsrc₊CC1_F)",1.0,1.0,1.0,False
+pre,36,"VIndex(2, :inv2₊vsrc₊CC1_KI)",0.0018,0.0018,0.0018,False
+pre,37,"VIndex(2, :inv2₊vsrc₊C)",0.1086,0.1086,0.1086,False
+pre,38,"VIndex(2, :inv2₊vsrc₊CC1_KP)",0.9817,0.9817,0.9817,False
+pre,39,"VIndex(2, :inv2₊vsrc₊X_virt)",0.0,0.0,0.0,False
+pre,40,"VIndex(2, :inv2₊vsrc₊Rf)",0.0139,0.0139,0.0139,False
+pre,41,"VIndex(2, :inv2₊vsrc₊CC1_Fcoupl)",1.0,1.0,1.0,False
+pre,42,"VIndex(2, :inv2₊vsrc₊I_max)",1.2,1.2,1.2,False
+pre,43,"VIndex(2, :inv2₊vsrc₊Lf)",0.0196,0.0196,0.0196,False
+pre,44,"VIndex(2, :inv2₊vsrc₊Lg)",0.0209,0.0209,0.0209,False
+pre,45,"VIndex(2, :inv2₊vsrc₊VC_KP)",1.4476,1.4476,1.4476,False
+pre,46,"VIndex(2, :inv2₊vsrc₊VC_F)",1.0,1.0,1.0,False
+pre,47,"VIndex(2, :inv2₊vsrc₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+pre,48,"VIndex(2, :inv2₊vsrc₊Rg)",0.01,0.01,0.01,False
+pre,49,"VIndex(2, :inv2₊vsrc₊R_virt)",0.0,0.0,0.0,False
+pre,50,"VIndex(2, :inv2₊vsrc₊VC_Fcoupl)",1.0,1.0,1.0,False
+pre,51,"VIndex(2, :inv2₊vsrc₊VC_KI)",0.0273,0.0273,0.0273,False
+pre,52,"VIndex(2, :inv2₊vsrc₊filter₊connected)",1.0,1.0,1.0,False
+pre,53,"VIndex(3, :inv3₊droop₊Kp)",7.5398223686155035,7.5398223686155035,18.84955592153876,True
+pre,54,"VIndex(3, :inv3₊droop₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+pre,55,"VIndex(3, :inv3₊droop₊Kq)",0.05,0.05,0.05,False
+pre,56,"VIndex(3, :inv3₊droop₊τ_q)",0.02,0.02,0.02,False
+pre,57,"VIndex(3, :inv3₊droop₊Vset)",1.0,1.0,1.0,False
+pre,58,"VIndex(3, :inv3₊droop₊τ_p)",0.02,1.0,0.25,True
+pre,59,"VIndex(3, :inv3₊droop₊Qset)",0.11248584940369824,0.11248584940369824,0.11248584940369824,False
+pre,60,"VIndex(3, :inv3₊droop₊Pset)",0.10014224804119214,0.10014224804119214,0.4,True
+pre,61,"VIndex(3, :inv3₊vsrc₊CC1_F)",1.0,1.0,1.0,False
+pre,62,"VIndex(3, :inv3₊vsrc₊CC1_KI)",0.0018,0.0018,0.0018,False
+pre,63,"VIndex(3, :inv3₊vsrc₊C)",0.1086,0.1086,0.1086,False
+pre,64,"VIndex(3, :inv3₊vsrc₊CC1_KP)",0.9817,0.9817,0.9817,False
+pre,65,"VIndex(3, :inv3₊vsrc₊X_virt)",0.0,0.0,0.0,False
+pre,66,"VIndex(3, :inv3₊vsrc₊Rf)",0.0139,0.0139,0.0139,False
+pre,67,"VIndex(3, :inv3₊vsrc₊CC1_Fcoupl)",1.0,1.0,1.0,False
+pre,68,"VIndex(3, :inv3₊vsrc₊I_max)",1.2,1.2,1.2,False
+pre,69,"VIndex(3, :inv3₊vsrc₊Lf)",0.0196,0.0196,0.0196,False
+pre,70,"VIndex(3, :inv3₊vsrc₊Lg)",0.0209,0.0209,0.0209,False
+pre,71,"VIndex(3, :inv3₊vsrc₊VC_KP)",1.4476,1.4476,1.4476,False
+pre,72,"VIndex(3, :inv3₊vsrc₊VC_F)",1.0,1.0,1.0,False
+pre,73,"VIndex(3, :inv3₊vsrc₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+pre,74,"VIndex(3, :inv3₊vsrc₊Rg)",0.01,0.01,0.01,False
+pre,75,"VIndex(3, :inv3₊vsrc₊R_virt)",0.0,0.0,0.0,False
+pre,76,"VIndex(3, :inv3₊vsrc₊VC_Fcoupl)",1.0,1.0,1.0,False
+pre,77,"VIndex(3, :inv3₊vsrc₊VC_KI)",0.0273,0.0273,0.0273,False
+pre,78,"VIndex(3, :inv3₊vsrc₊filter₊connected)",1.0,1.0,1.0,False
+pre,79,"VIndex(4, :fault_load₊Q_load_p)",0.0,0.0,0.0,False
+pre,80,"VIndex(4, :fault_load₊t_clear_p)",1.2,1.2,1.15,True
+pre,81,"VIndex(4, :fault_load₊t_fault_p)",1.0,1.0,1.0,False
+pre,82,"VIndex(4, :fault_load₊P_load_p)",0.0,0.0,0.0,False
+pre,83,"VIndex(4, :fault_load₊G_fault_p)",-20.0,-20.0,-20.0,False
+pre,84,"VIndex(4, :fault_load₊fault_enabled_p)",0.0,0.0,0.0,False
+pre,85,"VIndex(5, :PQLoad₊Q_load_p)",0.0,0.0,-0.9225240963471678,True
+pre,86,"VIndex(5, :PQLoad₊z_fraction)",1.0,1.0,1.0,False
+pre,87,"VIndex(5, :PQLoad₊vref2)",0.9225240963471678,0.9225240963471678,0.9225240963471678,False
+pre,88,"VIndex(5, :PQLoad₊P_load_p)",0.85,0.85,2.092496937363038,True
+pre,89,"VIndex(8, :PQLoad₊Q_load_p)",0.0,0.0,0.0,False
+pre,90,"VIndex(8, :PQLoad₊z_fraction)",0.0,0.0,0.0,False
+pre,91,"VIndex(8, :PQLoad₊vref2)",1.0,1.0,1.0,False
+pre,92,"VIndex(8, :PQLoad₊P_load_p)",0.0,0.0,0.0,False
+pre,93,"VIndex(6, :symbolic_slack₊V)",1.0,1.0,1.0,False
+pre,94,"VIndex(6, :symbolic_slack₊δ)",0.0,0.0,0.0,False
+pre,95,"VIndex(7, :inv7₊droop₊Kp)",7.5398223686155035,7.5398223686155035,18.84955592153876,True
+pre,96,"VIndex(7, :inv7₊droop₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+pre,97,"VIndex(7, :inv7₊droop₊Kq)",0.05,0.05,0.05,False
+pre,98,"VIndex(7, :inv7₊droop₊τ_q)",0.02,0.02,0.02,False
+pre,99,"VIndex(7, :inv7₊droop₊Vset)",1.0,1.0,1.0,False
+pre,100,"VIndex(7, :inv7₊droop₊τ_p)",0.02,1.0,0.25,True
+pre,101,"VIndex(7, :inv7₊droop₊Qset)",0.05232080478579085,0.05232080478579085,0.05232080478579085,False
+pre,102,"VIndex(7, :inv7₊droop₊Pset)",0.10010511385855865,0.10010511385855865,0.4,True
+pre,103,"VIndex(7, :inv7₊vsrc₊CC1_F)",1.0,1.0,1.0,False
+pre,104,"VIndex(7, :inv7₊vsrc₊CC1_KI)",0.0018,0.0018,0.0018,False
+pre,105,"VIndex(7, :inv7₊vsrc₊C)",0.1086,0.1086,0.1086,False
+pre,106,"VIndex(7, :inv7₊vsrc₊CC1_KP)",0.9817,0.9817,0.9817,False
+pre,107,"VIndex(7, :inv7₊vsrc₊X_virt)",0.0,0.0,0.0,False
+pre,108,"VIndex(7, :inv7₊vsrc₊Rf)",0.0139,0.0139,0.0139,False
+pre,109,"VIndex(7, :inv7₊vsrc₊CC1_Fcoupl)",1.0,1.0,1.0,False
+pre,110,"VIndex(7, :inv7₊vsrc₊I_max)",1.2,1.2,1.2,False
+pre,111,"VIndex(7, :inv7₊vsrc₊Lf)",0.0196,0.0196,0.0196,False
+pre,112,"VIndex(7, :inv7₊vsrc₊Lg)",0.0209,0.0209,0.0209,False
+pre,113,"VIndex(7, :inv7₊vsrc₊VC_KP)",1.4476,1.4476,1.4476,False
+pre,114,"VIndex(7, :inv7₊vsrc₊VC_F)",1.0,1.0,1.0,False
+pre,115,"VIndex(7, :inv7₊vsrc₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+pre,116,"VIndex(7, :inv7₊vsrc₊Rg)",0.01,0.01,0.01,False
+pre,117,"VIndex(7, :inv7₊vsrc₊R_virt)",0.0,0.0,0.0,False
+pre,118,"VIndex(7, :inv7₊vsrc₊VC_Fcoupl)",1.0,1.0,1.0,False
+pre,119,"VIndex(7, :inv7₊vsrc₊VC_KI)",0.0273,0.0273,0.0273,False
+pre,120,"VIndex(7, :inv7₊vsrc₊filter₊connected)",1.0,1.0,1.0,False
+pre,121,line1:line_sym₊R,0.1209434790198695,0.1209434790198695,0.1209434790198695,False
+pre,122,line1:line_sym₊X,0.4513672085462936,0.4513672085462936,0.4513672085462936,False
+pre,123,line1:line_sym₊G_src,0.0,0.0,0.0,False
+pre,124,line1:line_sym₊B_src,0.0,0.0,0.0,False
+pre,125,line1:line_sym₊G_dst,0.0,0.0,0.0,False
+pre,126,line1:line_sym₊B_dst,0.0,0.0,0.0,False
+pre,127,line1:line_sym₊r_src,1.0,1.0,1.0,False
+pre,128,line1:line_sym₊r_dst,1.0,1.0,1.0,False
+pre,129,line1:line_sym₊active,1.0,1.0,1.0,False
+pre,130,line5:line_sym₊R,0.13550735345681714,0.13550735345681714,0.13550735345681714,False
+pre,131,line5:line_sym₊X,0.5057203279000357,0.5057203279000357,0.5057203279000357,False
+pre,132,line5:line_sym₊G_src,0.0,0.0,0.0,False
+pre,133,line5:line_sym₊B_src,0.0,0.0,0.0,False
+pre,134,line5:line_sym₊G_dst,0.0,0.0,0.0,False
+pre,135,line5:line_sym₊B_dst,0.0,0.0,0.0,False
+pre,136,line5:line_sym₊r_src,1.0,1.0,1.0,False
+pre,137,line5:line_sym₊r_dst,1.0,1.0,1.0,False
+pre,138,line5:line_sym₊active,1.0,1.0,1.0,False
+pre,139,line6:line_sym₊R,0.1209434790198695,0.1209434790198695,0.1209434790198695,False
+pre,140,line6:line_sym₊X,0.4513672085462936,0.4513672085462936,0.4513672085462936,False
+pre,141,line6:line_sym₊G_src,0.0,0.0,0.0,False
+pre,142,line6:line_sym₊B_src,0.0,0.0,0.0,False
+pre,143,line6:line_sym₊G_dst,0.0,0.0,0.0,False
+pre,144,line6:line_sym₊B_dst,0.0,0.0,0.0,False
+pre,145,line6:line_sym₊r_src,1.0,1.0,1.0,False
+pre,146,line6:line_sym₊r_dst,1.0,1.0,1.0,False
+pre,147,line6:line_sym₊active,1.0,1.0,1.0,False
+pre,148,line9:line_sym₊R,0.04050376292684206,0.04050376292684206,0.04050376292684206,False
+pre,149,line9:line_sym₊X,0.15116210114069928,0.15116210114069928,0.15116210114069928,False
+pre,150,line9:line_sym₊G_src,0.0,0.0,0.0,False
+pre,151,line9:line_sym₊B_src,0.0,0.0,0.0,False
+pre,152,line9:line_sym₊G_dst,0.0,0.0,0.0,False
+pre,153,line9:line_sym₊B_dst,0.0,0.0,0.0,False
+pre,154,line9:line_sym₊r_src,1.0,1.0,1.0,False
+pre,155,line9:line_sym₊r_dst,1.0,1.0,1.0,False
+pre,156,line9:line_sym₊active,1.0,1.0,1.0,False
+pre,157,line8:line_sym₊R,0.11927144935600034,0.11927144935600034,0.11927144935600034,False
+pre,158,line8:line_sym₊X,0.44512710888897156,0.44512710888897156,0.44512710888897156,False
+pre,159,line8:line_sym₊G_src,0.0,0.0,0.0,False
+pre,160,line8:line_sym₊B_src,0.0,0.0,0.0,False
+pre,161,line8:line_sym₊G_dst,0.0,0.0,0.0,False
+pre,162,line8:line_sym₊B_dst,0.0,0.0,0.0,False
+pre,163,line8:line_sym₊r_src,1.0,1.0,1.0,False
+pre,164,line8:line_sym₊r_dst,1.0,1.0,1.0,False
+pre,165,line8:line_sym₊active,1.0,1.0,1.0,False
+pre,166,line4:line_sym₊R,0.11711269009163834,0.11711269009163834,0.11711269009163834,False
+pre,167,line4:line_sym₊X,0.4370705096330626,0.4370705096330626,0.4370705096330626,False
+pre,168,line4:line_sym₊G_src,0.0,0.0,0.0,False
+pre,169,line4:line_sym₊B_src,0.0,0.0,0.0,False
+pre,170,line4:line_sym₊G_dst,0.0,0.0,0.0,False
+pre,171,line4:line_sym₊B_dst,0.0,0.0,0.0,False
+pre,172,line4:line_sym₊r_src,1.0,1.0,1.0,False
+pre,173,line4:line_sym₊r_dst,1.0,1.0,1.0,False
+pre,174,line4:line_sym₊active,1.0,1.0,1.0,False
+pre,175,line7:line_sym₊R,0.1437883583902893,0.1437883583902893,0.1437883583902893,False
+pre,176,line7:line_sym₊X,0.5366254590494824,0.5366254590494824,0.5366254590494824,False
+pre,177,line7:line_sym₊G_src,0.0,0.0,0.0,False
+pre,178,line7:line_sym₊B_src,0.0,0.0,0.0,False
+pre,179,line7:line_sym₊G_dst,0.0,0.0,0.0,False
+pre,180,line7:line_sym₊B_dst,0.0,0.0,0.0,False
+pre,181,line7:line_sym₊r_src,1.0,1.0,1.0,False
+pre,182,line7:line_sym₊r_dst,1.0,1.0,1.0,False
+pre,183,line7:line_sym₊active,1.0,1.0,1.0,False
+pre,184,line2:line_sym₊R,0.07771664353145487,0.07771664353145487,0.05140712362360391,True
+pre,185,line2:line_sym₊X,0.29004246225310876,0.29004246225310876,0.1918539972342641,True
+pre,186,line2:line_sym₊G_src,0.0,0.0,0.0,False
+pre,187,line2:line_sym₊B_src,0.0,0.0,0.0,False
+pre,188,line2:line_sym₊G_dst,0.0,0.0,0.0,False
+pre,189,line2:line_sym₊B_dst,0.0,0.0,0.0,False
+pre,190,line2:line_sym₊r_src,1.0,1.0,1.0,False
+pre,191,line2:line_sym₊r_dst,1.0,1.0,1.0,False
+pre,192,line2:line_sym₊active,1.0,1.0,1.0,False
+pre,193,line3:line_sym₊R,0.3920118931071915,0.3920118931071915,0.259303579454355,True
+pre,194,line3:line_sym₊X,1.4630083022472986,1.4630083022472986,0.9677341331081263,True
+pre,195,line3:line_sym₊G_src,0.0,0.0,0.0,False
+pre,196,line3:line_sym₊B_src,0.0,0.0,0.0,False
+pre,197,line3:line_sym₊G_dst,0.0,0.0,0.0,False
+pre,198,line3:line_sym₊B_dst,0.0,0.0,0.0,False
+pre,199,line3:line_sym₊r_src,1.0,1.0,1.0,False
+pre,200,line3:line_sym₊r_dst,1.0,1.0,1.0,False
+pre,201,line3:line_sym₊active,1.0,1.0,1.0,False
+pre,202,line11:line_sym₊R,0.02888605414090633,0.02888605414090633,0.02888605414090633,False
+pre,203,line11:line_sym₊X,0.1078042216840478,0.1078042216840478,0.1078042216840478,False
+pre,204,line11:line_sym₊G_src,0.0,0.0,0.0,False
+pre,205,line11:line_sym₊B_src,0.0,0.0,0.0,False
+pre,206,line11:line_sym₊G_dst,0.0,0.0,0.0,False
+pre,207,line11:line_sym₊B_dst,0.0,0.0,0.0,False
+pre,208,line11:line_sym₊r_src,1.0,1.0,1.0,False
+pre,209,line11:line_sym₊r_dst,1.0,1.0,1.0,False
+pre,210,line11:line_sym₊active,1.0,1.0,1.0,False
+pre,211,line10:line_sym₊R,0.1531473639659886,0.1531473639659886,0.1531473639659886,False
+pre,212,line10:line_sym₊X,0.5715537433663126,0.5715537433663126,0.5715537433663126,False
+pre,213,line10:line_sym₊G_src,0.0,0.0,0.0,False
+pre,214,line10:line_sym₊B_src,0.0,0.0,0.0,False
+pre,215,line10:line_sym₊G_dst,0.0,0.0,0.0,False
+pre,216,line10:line_sym₊B_dst,0.0,0.0,0.0,False
+pre,217,line10:line_sym₊r_src,1.0,1.0,1.0,False
+pre,218,line10:line_sym₊r_dst,1.0,1.0,1.0,False
+pre,219,line10:line_sym₊active,1.0,1.0,1.0,False
+fault,1,"VIndex(1, :inv1₊droop₊Kp)",7.5398223686155035,7.5398223686155035,18.84955592153876,True
+fault,2,"VIndex(1, :inv1₊droop₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+fault,3,"VIndex(1, :inv1₊droop₊Kq)",0.05,0.05,0.05,False
+fault,4,"VIndex(1, :inv1₊droop₊τ_q)",0.02,0.02,0.02,False
+fault,5,"VIndex(1, :inv1₊droop₊Vset)",1.0,1.0,1.0,False
+fault,6,"VIndex(1, :inv1₊droop₊τ_p)",0.02,1.0,0.25,True
+fault,7,"VIndex(1, :inv1₊droop₊Qset)",0.16370094127236381,0.16370094127236381,0.16370094127236381,False
+fault,8,"VIndex(1, :inv1₊droop₊Pset)",0.7049006414424951,0.7049006414424951,0.5,True
+fault,9,"VIndex(1, :inv1₊vsrc₊CC1_F)",1.0,1.0,1.0,False
+fault,10,"VIndex(1, :inv1₊vsrc₊CC1_KI)",0.0018,0.0018,0.0018,False
+fault,11,"VIndex(1, :inv1₊vsrc₊C)",0.1086,0.1086,0.1086,False
+fault,12,"VIndex(1, :inv1₊vsrc₊CC1_KP)",0.9817,0.9817,0.9817,False
+fault,13,"VIndex(1, :inv1₊vsrc₊X_virt)",0.0,0.0,0.0,False
+fault,14,"VIndex(1, :inv1₊vsrc₊Rf)",0.0139,0.0139,0.0139,False
+fault,15,"VIndex(1, :inv1₊vsrc₊CC1_Fcoupl)",1.0,1.0,1.0,False
+fault,16,"VIndex(1, :inv1₊vsrc₊I_max)",1.2,1.2,1.2,False
+fault,17,"VIndex(1, :inv1₊vsrc₊Lf)",0.0196,0.0196,0.0196,False
+fault,18,"VIndex(1, :inv1₊vsrc₊Lg)",0.0209,0.0209,0.0209,False
+fault,19,"VIndex(1, :inv1₊vsrc₊VC_KP)",1.4476,1.4476,1.4476,False
+fault,20,"VIndex(1, :inv1₊vsrc₊VC_F)",1.0,1.0,1.0,False
+fault,21,"VIndex(1, :inv1₊vsrc₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+fault,22,"VIndex(1, :inv1₊vsrc₊Rg)",0.01,0.01,0.01,False
+fault,23,"VIndex(1, :inv1₊vsrc₊R_virt)",0.0,0.0,0.0,False
+fault,24,"VIndex(1, :inv1₊vsrc₊VC_Fcoupl)",1.0,1.0,1.0,False
+fault,25,"VIndex(1, :inv1₊vsrc₊VC_KI)",0.0273,0.0273,0.0273,False
+fault,26,"VIndex(1, :inv1₊vsrc₊filter₊connected)",1.0,1.0,1.0,False
+fault,27,"VIndex(2, :inv2₊droop₊Kp)",7.5398223686155035,7.5398223686155035,18.84955592153876,True
+fault,28,"VIndex(2, :inv2₊droop₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+fault,29,"VIndex(2, :inv2₊droop₊Kq)",0.05,0.05,0.05,False
+fault,30,"VIndex(2, :inv2₊droop₊τ_q)",0.02,0.02,0.02,False
+fault,31,"VIndex(2, :inv2₊droop₊Vset)",1.0,1.0,1.0,False
+fault,32,"VIndex(2, :inv2₊droop₊τ_p)",0.02,1.0,0.25,True
+fault,33,"VIndex(2, :inv2₊droop₊Qset)",0.197690040391902,0.197690040391902,0.197690040391902,False
+fault,34,"VIndex(2, :inv2₊droop₊Pset)",0.10025606988910452,0.10025606988910452,0.4,True
+fault,35,"VIndex(2, :inv2₊vsrc₊CC1_F)",1.0,1.0,1.0,False
+fault,36,"VIndex(2, :inv2₊vsrc₊CC1_KI)",0.0018,0.0018,0.0018,False
+fault,37,"VIndex(2, :inv2₊vsrc₊C)",0.1086,0.1086,0.1086,False
+fault,38,"VIndex(2, :inv2₊vsrc₊CC1_KP)",0.9817,0.9817,0.9817,False
+fault,39,"VIndex(2, :inv2₊vsrc₊X_virt)",0.0,0.0,0.0,False
+fault,40,"VIndex(2, :inv2₊vsrc₊Rf)",0.0139,0.0139,0.0139,False
+fault,41,"VIndex(2, :inv2₊vsrc₊CC1_Fcoupl)",1.0,1.0,1.0,False
+fault,42,"VIndex(2, :inv2₊vsrc₊I_max)",1.2,1.2,1.2,False
+fault,43,"VIndex(2, :inv2₊vsrc₊Lf)",0.0196,0.0196,0.0196,False
+fault,44,"VIndex(2, :inv2₊vsrc₊Lg)",0.0209,0.0209,0.0209,False
+fault,45,"VIndex(2, :inv2₊vsrc₊VC_KP)",1.4476,1.4476,1.4476,False
+fault,46,"VIndex(2, :inv2₊vsrc₊VC_F)",1.0,1.0,1.0,False
+fault,47,"VIndex(2, :inv2₊vsrc₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+fault,48,"VIndex(2, :inv2₊vsrc₊Rg)",0.01,0.01,0.01,False
+fault,49,"VIndex(2, :inv2₊vsrc₊R_virt)",0.0,0.0,0.0,False
+fault,50,"VIndex(2, :inv2₊vsrc₊VC_Fcoupl)",1.0,1.0,1.0,False
+fault,51,"VIndex(2, :inv2₊vsrc₊VC_KI)",0.0273,0.0273,0.0273,False
+fault,52,"VIndex(2, :inv2₊vsrc₊filter₊connected)",1.0,1.0,1.0,False
+fault,53,"VIndex(3, :inv3₊droop₊Kp)",7.5398223686155035,7.5398223686155035,18.84955592153876,True
+fault,54,"VIndex(3, :inv3₊droop₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+fault,55,"VIndex(3, :inv3₊droop₊Kq)",0.05,0.05,0.05,False
+fault,56,"VIndex(3, :inv3₊droop₊τ_q)",0.02,0.02,0.02,False
+fault,57,"VIndex(3, :inv3₊droop₊Vset)",1.0,1.0,1.0,False
+fault,58,"VIndex(3, :inv3₊droop₊τ_p)",0.02,1.0,0.25,True
+fault,59,"VIndex(3, :inv3₊droop₊Qset)",0.11248584940369824,0.11248584940369824,0.11248584940369824,False
+fault,60,"VIndex(3, :inv3₊droop₊Pset)",0.10014224804119214,0.10014224804119214,0.4,True
+fault,61,"VIndex(3, :inv3₊vsrc₊CC1_F)",1.0,1.0,1.0,False
+fault,62,"VIndex(3, :inv3₊vsrc₊CC1_KI)",0.0018,0.0018,0.0018,False
+fault,63,"VIndex(3, :inv3₊vsrc₊C)",0.1086,0.1086,0.1086,False
+fault,64,"VIndex(3, :inv3₊vsrc₊CC1_KP)",0.9817,0.9817,0.9817,False
+fault,65,"VIndex(3, :inv3₊vsrc₊X_virt)",0.0,0.0,0.0,False
+fault,66,"VIndex(3, :inv3₊vsrc₊Rf)",0.0139,0.0139,0.0139,False
+fault,67,"VIndex(3, :inv3₊vsrc₊CC1_Fcoupl)",1.0,1.0,1.0,False
+fault,68,"VIndex(3, :inv3₊vsrc₊I_max)",1.2,1.2,1.2,False
+fault,69,"VIndex(3, :inv3₊vsrc₊Lf)",0.0196,0.0196,0.0196,False
+fault,70,"VIndex(3, :inv3₊vsrc₊Lg)",0.0209,0.0209,0.0209,False
+fault,71,"VIndex(3, :inv3₊vsrc₊VC_KP)",1.4476,1.4476,1.4476,False
+fault,72,"VIndex(3, :inv3₊vsrc₊VC_F)",1.0,1.0,1.0,False
+fault,73,"VIndex(3, :inv3₊vsrc₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+fault,74,"VIndex(3, :inv3₊vsrc₊Rg)",0.01,0.01,0.01,False
+fault,75,"VIndex(3, :inv3₊vsrc₊R_virt)",0.0,0.0,0.0,False
+fault,76,"VIndex(3, :inv3₊vsrc₊VC_Fcoupl)",1.0,1.0,1.0,False
+fault,77,"VIndex(3, :inv3₊vsrc₊VC_KI)",0.0273,0.0273,0.0273,False
+fault,78,"VIndex(3, :inv3₊vsrc₊filter₊connected)",1.0,1.0,1.0,False
+fault,79,"VIndex(4, :fault_load₊Q_load_p)",0.0,0.0,0.0,False
+fault,80,"VIndex(4, :fault_load₊t_clear_p)",1.2,1.2,1.15,True
+fault,81,"VIndex(4, :fault_load₊t_fault_p)",1.0,1.0,1.0,False
+fault,82,"VIndex(4, :fault_load₊P_load_p)",0.0,0.0,0.0,False
+fault,83,"VIndex(4, :fault_load₊G_fault_p)",-20.0,-20.0,-20.0,False
+fault,84,"VIndex(4, :fault_load₊fault_enabled_p)",1.0,1.0,1.0,False
+fault,85,"VIndex(5, :PQLoad₊Q_load_p)",0.0,0.0,-0.9225240963471678,True
+fault,86,"VIndex(5, :PQLoad₊z_fraction)",1.0,1.0,1.0,False
+fault,87,"VIndex(5, :PQLoad₊vref2)",0.9225240963471678,0.9225240963471678,0.9225240963471678,False
+fault,88,"VIndex(5, :PQLoad₊P_load_p)",0.85,0.85,2.092496937363038,True
+fault,89,"VIndex(8, :PQLoad₊Q_load_p)",0.0,0.0,0.0,False
+fault,90,"VIndex(8, :PQLoad₊z_fraction)",0.0,0.0,0.0,False
+fault,91,"VIndex(8, :PQLoad₊vref2)",1.0,1.0,1.0,False
+fault,92,"VIndex(8, :PQLoad₊P_load_p)",0.0,0.0,0.0,False
+fault,93,"VIndex(6, :symbolic_slack₊V)",1.0,1.0,1.0,False
+fault,94,"VIndex(6, :symbolic_slack₊δ)",0.0,0.0,0.0,False
+fault,95,"VIndex(7, :inv7₊droop₊Kp)",7.5398223686155035,7.5398223686155035,18.84955592153876,True
+fault,96,"VIndex(7, :inv7₊droop₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+fault,97,"VIndex(7, :inv7₊droop₊Kq)",0.05,0.05,0.05,False
+fault,98,"VIndex(7, :inv7₊droop₊τ_q)",0.02,0.02,0.02,False
+fault,99,"VIndex(7, :inv7₊droop₊Vset)",1.0,1.0,1.0,False
+fault,100,"VIndex(7, :inv7₊droop₊τ_p)",0.02,1.0,0.25,True
+fault,101,"VIndex(7, :inv7₊droop₊Qset)",0.05232080478579085,0.05232080478579085,0.05232080478579085,False
+fault,102,"VIndex(7, :inv7₊droop₊Pset)",0.10010511385855865,0.10010511385855865,0.4,True
+fault,103,"VIndex(7, :inv7₊vsrc₊CC1_F)",1.0,1.0,1.0,False
+fault,104,"VIndex(7, :inv7₊vsrc₊CC1_KI)",0.0018,0.0018,0.0018,False
+fault,105,"VIndex(7, :inv7₊vsrc₊C)",0.1086,0.1086,0.1086,False
+fault,106,"VIndex(7, :inv7₊vsrc₊CC1_KP)",0.9817,0.9817,0.9817,False
+fault,107,"VIndex(7, :inv7₊vsrc₊X_virt)",0.0,0.0,0.0,False
+fault,108,"VIndex(7, :inv7₊vsrc₊Rf)",0.0139,0.0139,0.0139,False
+fault,109,"VIndex(7, :inv7₊vsrc₊CC1_Fcoupl)",1.0,1.0,1.0,False
+fault,110,"VIndex(7, :inv7₊vsrc₊I_max)",1.2,1.2,1.2,False
+fault,111,"VIndex(7, :inv7₊vsrc₊Lf)",0.0196,0.0196,0.0196,False
+fault,112,"VIndex(7, :inv7₊vsrc₊Lg)",0.0209,0.0209,0.0209,False
+fault,113,"VIndex(7, :inv7₊vsrc₊VC_KP)",1.4476,1.4476,1.4476,False
+fault,114,"VIndex(7, :inv7₊vsrc₊VC_F)",1.0,1.0,1.0,False
+fault,115,"VIndex(7, :inv7₊vsrc₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+fault,116,"VIndex(7, :inv7₊vsrc₊Rg)",0.01,0.01,0.01,False
+fault,117,"VIndex(7, :inv7₊vsrc₊R_virt)",0.0,0.0,0.0,False
+fault,118,"VIndex(7, :inv7₊vsrc₊VC_Fcoupl)",1.0,1.0,1.0,False
+fault,119,"VIndex(7, :inv7₊vsrc₊VC_KI)",0.0273,0.0273,0.0273,False
+fault,120,"VIndex(7, :inv7₊vsrc₊filter₊connected)",1.0,1.0,1.0,False
+fault,121,line1:line_sym₊R,0.1209434790198695,0.1209434790198695,0.1209434790198695,False
+fault,122,line1:line_sym₊X,0.4513672085462936,0.4513672085462936,0.4513672085462936,False
+fault,123,line1:line_sym₊G_src,0.0,0.0,0.0,False
+fault,124,line1:line_sym₊B_src,0.0,0.0,0.0,False
+fault,125,line1:line_sym₊G_dst,0.0,0.0,0.0,False
+fault,126,line1:line_sym₊B_dst,0.0,0.0,0.0,False
+fault,127,line1:line_sym₊r_src,1.0,1.0,1.0,False
+fault,128,line1:line_sym₊r_dst,1.0,1.0,1.0,False
+fault,129,line1:line_sym₊active,1.0,1.0,1.0,False
+fault,130,line5:line_sym₊R,0.13550735345681714,0.13550735345681714,0.13550735345681714,False
+fault,131,line5:line_sym₊X,0.5057203279000357,0.5057203279000357,0.5057203279000357,False
+fault,132,line5:line_sym₊G_src,0.0,0.0,0.0,False
+fault,133,line5:line_sym₊B_src,0.0,0.0,0.0,False
+fault,134,line5:line_sym₊G_dst,0.0,0.0,0.0,False
+fault,135,line5:line_sym₊B_dst,0.0,0.0,0.0,False
+fault,136,line5:line_sym₊r_src,1.0,1.0,1.0,False
+fault,137,line5:line_sym₊r_dst,1.0,1.0,1.0,False
+fault,138,line5:line_sym₊active,1.0,1.0,1.0,False
+fault,139,line6:line_sym₊R,0.1209434790198695,0.1209434790198695,0.1209434790198695,False
+fault,140,line6:line_sym₊X,0.4513672085462936,0.4513672085462936,0.4513672085462936,False
+fault,141,line6:line_sym₊G_src,0.0,0.0,0.0,False
+fault,142,line6:line_sym₊B_src,0.0,0.0,0.0,False
+fault,143,line6:line_sym₊G_dst,0.0,0.0,0.0,False
+fault,144,line6:line_sym₊B_dst,0.0,0.0,0.0,False
+fault,145,line6:line_sym₊r_src,1.0,1.0,1.0,False
+fault,146,line6:line_sym₊r_dst,1.0,1.0,1.0,False
+fault,147,line6:line_sym₊active,1.0,1.0,1.0,False
+fault,148,line9:line_sym₊R,0.04050376292684206,0.04050376292684206,0.04050376292684206,False
+fault,149,line9:line_sym₊X,0.15116210114069928,0.15116210114069928,0.15116210114069928,False
+fault,150,line9:line_sym₊G_src,0.0,0.0,0.0,False
+fault,151,line9:line_sym₊B_src,0.0,0.0,0.0,False
+fault,152,line9:line_sym₊G_dst,0.0,0.0,0.0,False
+fault,153,line9:line_sym₊B_dst,0.0,0.0,0.0,False
+fault,154,line9:line_sym₊r_src,1.0,1.0,1.0,False
+fault,155,line9:line_sym₊r_dst,1.0,1.0,1.0,False
+fault,156,line9:line_sym₊active,1.0,1.0,1.0,False
+fault,157,line8:line_sym₊R,0.11927144935600034,0.11927144935600034,0.11927144935600034,False
+fault,158,line8:line_sym₊X,0.44512710888897156,0.44512710888897156,0.44512710888897156,False
+fault,159,line8:line_sym₊G_src,0.0,0.0,0.0,False
+fault,160,line8:line_sym₊B_src,0.0,0.0,0.0,False
+fault,161,line8:line_sym₊G_dst,0.0,0.0,0.0,False
+fault,162,line8:line_sym₊B_dst,0.0,0.0,0.0,False
+fault,163,line8:line_sym₊r_src,1.0,1.0,1.0,False
+fault,164,line8:line_sym₊r_dst,1.0,1.0,1.0,False
+fault,165,line8:line_sym₊active,1.0,1.0,1.0,False
+fault,166,line4:line_sym₊R,0.11711269009163834,0.11711269009163834,0.11711269009163834,False
+fault,167,line4:line_sym₊X,0.4370705096330626,0.4370705096330626,0.4370705096330626,False
+fault,168,line4:line_sym₊G_src,0.0,0.0,0.0,False
+fault,169,line4:line_sym₊B_src,0.0,0.0,0.0,False
+fault,170,line4:line_sym₊G_dst,0.0,0.0,0.0,False
+fault,171,line4:line_sym₊B_dst,0.0,0.0,0.0,False
+fault,172,line4:line_sym₊r_src,1.0,1.0,1.0,False
+fault,173,line4:line_sym₊r_dst,1.0,1.0,1.0,False
+fault,174,line4:line_sym₊active,1.0,1.0,1.0,False
+fault,175,line7:line_sym₊R,0.1437883583902893,0.1437883583902893,0.1437883583902893,False
+fault,176,line7:line_sym₊X,0.5366254590494824,0.5366254590494824,0.5366254590494824,False
+fault,177,line7:line_sym₊G_src,0.0,0.0,0.0,False
+fault,178,line7:line_sym₊B_src,0.0,0.0,0.0,False
+fault,179,line7:line_sym₊G_dst,0.0,0.0,0.0,False
+fault,180,line7:line_sym₊B_dst,0.0,0.0,0.0,False
+fault,181,line7:line_sym₊r_src,1.0,1.0,1.0,False
+fault,182,line7:line_sym₊r_dst,1.0,1.0,1.0,False
+fault,183,line7:line_sym₊active,1.0,1.0,1.0,False
+fault,184,line2:line_sym₊R,0.07771664353145487,0.07771664353145487,0.05140712362360391,True
+fault,185,line2:line_sym₊X,0.29004246225310876,0.29004246225310876,0.1918539972342641,True
+fault,186,line2:line_sym₊G_src,0.0,0.0,0.0,False
+fault,187,line2:line_sym₊B_src,0.0,0.0,0.0,False
+fault,188,line2:line_sym₊G_dst,0.0,0.0,0.0,False
+fault,189,line2:line_sym₊B_dst,0.0,0.0,0.0,False
+fault,190,line2:line_sym₊r_src,1.0,1.0,1.0,False
+fault,191,line2:line_sym₊r_dst,1.0,1.0,1.0,False
+fault,192,line2:line_sym₊active,1.0,1.0,1.0,False
+fault,193,line3:line_sym₊R,0.3920118931071915,0.3920118931071915,0.259303579454355,True
+fault,194,line3:line_sym₊X,1.4630083022472986,1.4630083022472986,0.9677341331081263,True
+fault,195,line3:line_sym₊G_src,0.0,0.0,0.0,False
+fault,196,line3:line_sym₊B_src,0.0,0.0,0.0,False
+fault,197,line3:line_sym₊G_dst,0.0,0.0,0.0,False
+fault,198,line3:line_sym₊B_dst,0.0,0.0,0.0,False
+fault,199,line3:line_sym₊r_src,1.0,1.0,1.0,False
+fault,200,line3:line_sym₊r_dst,1.0,1.0,1.0,False
+fault,201,line3:line_sym₊active,1.0,1.0,1.0,False
+fault,202,line11:line_sym₊R,0.02888605414090633,0.02888605414090633,0.02888605414090633,False
+fault,203,line11:line_sym₊X,0.1078042216840478,0.1078042216840478,0.1078042216840478,False
+fault,204,line11:line_sym₊G_src,0.0,0.0,0.0,False
+fault,205,line11:line_sym₊B_src,0.0,0.0,0.0,False
+fault,206,line11:line_sym₊G_dst,0.0,0.0,0.0,False
+fault,207,line11:line_sym₊B_dst,0.0,0.0,0.0,False
+fault,208,line11:line_sym₊r_src,1.0,1.0,1.0,False
+fault,209,line11:line_sym₊r_dst,1.0,1.0,1.0,False
+fault,210,line11:line_sym₊active,1.0,1.0,1.0,False
+fault,211,line10:line_sym₊R,0.1531473639659886,0.1531473639659886,0.1531473639659886,False
+fault,212,line10:line_sym₊X,0.5715537433663126,0.5715537433663126,0.5715537433663126,False
+fault,213,line10:line_sym₊G_src,0.0,0.0,0.0,False
+fault,214,line10:line_sym₊B_src,0.0,0.0,0.0,False
+fault,215,line10:line_sym₊G_dst,0.0,0.0,0.0,False
+fault,216,line10:line_sym₊B_dst,0.0,0.0,0.0,False
+fault,217,line10:line_sym₊r_src,1.0,1.0,1.0,False
+fault,218,line10:line_sym₊r_dst,1.0,1.0,1.0,False
+fault,219,line10:line_sym₊active,1.0,1.0,1.0,False
+post,1,"VIndex(1, :inv1₊droop₊Kp)",7.5398223686155035,7.5398223686155035,18.84955592153876,True
+post,2,"VIndex(1, :inv1₊droop₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+post,3,"VIndex(1, :inv1₊droop₊Kq)",0.05,0.05,0.05,False
+post,4,"VIndex(1, :inv1₊droop₊τ_q)",0.02,0.02,0.02,False
+post,5,"VIndex(1, :inv1₊droop₊Vset)",1.0,1.0,1.0,False
+post,6,"VIndex(1, :inv1₊droop₊τ_p)",0.02,1.0,0.25,True
+post,7,"VIndex(1, :inv1₊droop₊Qset)",0.16370094127236381,0.16370094127236381,0.16370094127236381,False
+post,8,"VIndex(1, :inv1₊droop₊Pset)",0.7049006414424951,0.7049006414424951,0.5,True
+post,9,"VIndex(1, :inv1₊vsrc₊CC1_F)",1.0,1.0,1.0,False
+post,10,"VIndex(1, :inv1₊vsrc₊CC1_KI)",0.0018,0.0018,0.0018,False
+post,11,"VIndex(1, :inv1₊vsrc₊C)",0.1086,0.1086,0.1086,False
+post,12,"VIndex(1, :inv1₊vsrc₊CC1_KP)",0.9817,0.9817,0.9817,False
+post,13,"VIndex(1, :inv1₊vsrc₊X_virt)",0.0,0.0,0.0,False
+post,14,"VIndex(1, :inv1₊vsrc₊Rf)",0.0139,0.0139,0.0139,False
+post,15,"VIndex(1, :inv1₊vsrc₊CC1_Fcoupl)",1.0,1.0,1.0,False
+post,16,"VIndex(1, :inv1₊vsrc₊I_max)",1.2,1.2,1.2,False
+post,17,"VIndex(1, :inv1₊vsrc₊Lf)",0.0196,0.0196,0.0196,False
+post,18,"VIndex(1, :inv1₊vsrc₊Lg)",0.0209,0.0209,0.0209,False
+post,19,"VIndex(1, :inv1₊vsrc₊VC_KP)",1.4476,1.4476,1.4476,False
+post,20,"VIndex(1, :inv1₊vsrc₊VC_F)",1.0,1.0,1.0,False
+post,21,"VIndex(1, :inv1₊vsrc₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+post,22,"VIndex(1, :inv1₊vsrc₊Rg)",0.01,0.01,0.01,False
+post,23,"VIndex(1, :inv1₊vsrc₊R_virt)",0.0,0.0,0.0,False
+post,24,"VIndex(1, :inv1₊vsrc₊VC_Fcoupl)",1.0,1.0,1.0,False
+post,25,"VIndex(1, :inv1₊vsrc₊VC_KI)",0.0273,0.0273,0.0273,False
+post,26,"VIndex(1, :inv1₊vsrc₊filter₊connected)",1.0,1.0,1.0,False
+post,27,"VIndex(2, :inv2₊droop₊Kp)",7.5398223686155035,7.5398223686155035,18.84955592153876,True
+post,28,"VIndex(2, :inv2₊droop₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+post,29,"VIndex(2, :inv2₊droop₊Kq)",0.05,0.05,0.05,False
+post,30,"VIndex(2, :inv2₊droop₊τ_q)",0.02,0.02,0.02,False
+post,31,"VIndex(2, :inv2₊droop₊Vset)",1.0,1.0,1.0,False
+post,32,"VIndex(2, :inv2₊droop₊τ_p)",0.02,1.0,0.25,True
+post,33,"VIndex(2, :inv2₊droop₊Qset)",0.197690040391902,0.197690040391902,0.197690040391902,False
+post,34,"VIndex(2, :inv2₊droop₊Pset)",0.10025606988910452,0.10025606988910452,0.4,True
+post,35,"VIndex(2, :inv2₊vsrc₊CC1_F)",1.0,1.0,1.0,False
+post,36,"VIndex(2, :inv2₊vsrc₊CC1_KI)",0.0018,0.0018,0.0018,False
+post,37,"VIndex(2, :inv2₊vsrc₊C)",0.1086,0.1086,0.1086,False
+post,38,"VIndex(2, :inv2₊vsrc₊CC1_KP)",0.9817,0.9817,0.9817,False
+post,39,"VIndex(2, :inv2₊vsrc₊X_virt)",0.0,0.0,0.0,False
+post,40,"VIndex(2, :inv2₊vsrc₊Rf)",0.0139,0.0139,0.0139,False
+post,41,"VIndex(2, :inv2₊vsrc₊CC1_Fcoupl)",1.0,1.0,1.0,False
+post,42,"VIndex(2, :inv2₊vsrc₊I_max)",1.2,1.2,1.2,False
+post,43,"VIndex(2, :inv2₊vsrc₊Lf)",0.0196,0.0196,0.0196,False
+post,44,"VIndex(2, :inv2₊vsrc₊Lg)",0.0209,0.0209,0.0209,False
+post,45,"VIndex(2, :inv2₊vsrc₊VC_KP)",1.4476,1.4476,1.4476,False
+post,46,"VIndex(2, :inv2₊vsrc₊VC_F)",1.0,1.0,1.0,False
+post,47,"VIndex(2, :inv2₊vsrc₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+post,48,"VIndex(2, :inv2₊vsrc₊Rg)",0.01,0.01,0.01,False
+post,49,"VIndex(2, :inv2₊vsrc₊R_virt)",0.0,0.0,0.0,False
+post,50,"VIndex(2, :inv2₊vsrc₊VC_Fcoupl)",1.0,1.0,1.0,False
+post,51,"VIndex(2, :inv2₊vsrc₊VC_KI)",0.0273,0.0273,0.0273,False
+post,52,"VIndex(2, :inv2₊vsrc₊filter₊connected)",1.0,1.0,1.0,False
+post,53,"VIndex(3, :inv3₊droop₊Kp)",7.5398223686155035,7.5398223686155035,18.84955592153876,True
+post,54,"VIndex(3, :inv3₊droop₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+post,55,"VIndex(3, :inv3₊droop₊Kq)",0.05,0.05,0.05,False
+post,56,"VIndex(3, :inv3₊droop₊τ_q)",0.02,0.02,0.02,False
+post,57,"VIndex(3, :inv3₊droop₊Vset)",1.0,1.0,1.0,False
+post,58,"VIndex(3, :inv3₊droop₊τ_p)",0.02,1.0,0.25,True
+post,59,"VIndex(3, :inv3₊droop₊Qset)",0.11248584940369824,0.11248584940369824,0.11248584940369824,False
+post,60,"VIndex(3, :inv3₊droop₊Pset)",0.10014224804119214,0.10014224804119214,0.4,True
+post,61,"VIndex(3, :inv3₊vsrc₊CC1_F)",1.0,1.0,1.0,False
+post,62,"VIndex(3, :inv3₊vsrc₊CC1_KI)",0.0018,0.0018,0.0018,False
+post,63,"VIndex(3, :inv3₊vsrc₊C)",0.1086,0.1086,0.1086,False
+post,64,"VIndex(3, :inv3₊vsrc₊CC1_KP)",0.9817,0.9817,0.9817,False
+post,65,"VIndex(3, :inv3₊vsrc₊X_virt)",0.0,0.0,0.0,False
+post,66,"VIndex(3, :inv3₊vsrc₊Rf)",0.0139,0.0139,0.0139,False
+post,67,"VIndex(3, :inv3₊vsrc₊CC1_Fcoupl)",1.0,1.0,1.0,False
+post,68,"VIndex(3, :inv3₊vsrc₊I_max)",1.2,1.2,1.2,False
+post,69,"VIndex(3, :inv3₊vsrc₊Lf)",0.0196,0.0196,0.0196,False
+post,70,"VIndex(3, :inv3₊vsrc₊Lg)",0.0209,0.0209,0.0209,False
+post,71,"VIndex(3, :inv3₊vsrc₊VC_KP)",1.4476,1.4476,1.4476,False
+post,72,"VIndex(3, :inv3₊vsrc₊VC_F)",1.0,1.0,1.0,False
+post,73,"VIndex(3, :inv3₊vsrc₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+post,74,"VIndex(3, :inv3₊vsrc₊Rg)",0.01,0.01,0.01,False
+post,75,"VIndex(3, :inv3₊vsrc₊R_virt)",0.0,0.0,0.0,False
+post,76,"VIndex(3, :inv3₊vsrc₊VC_Fcoupl)",1.0,1.0,1.0,False
+post,77,"VIndex(3, :inv3₊vsrc₊VC_KI)",0.0273,0.0273,0.0273,False
+post,78,"VIndex(3, :inv3₊vsrc₊filter₊connected)",1.0,1.0,1.0,False
+post,79,"VIndex(4, :fault_load₊Q_load_p)",0.0,0.0,0.0,False
+post,80,"VIndex(4, :fault_load₊t_clear_p)",1.2,1.2,1.15,True
+post,81,"VIndex(4, :fault_load₊t_fault_p)",1.0,1.0,1.0,False
+post,82,"VIndex(4, :fault_load₊P_load_p)",0.0,0.0,0.0,False
+post,83,"VIndex(4, :fault_load₊G_fault_p)",-20.0,-20.0,-20.0,False
+post,84,"VIndex(4, :fault_load₊fault_enabled_p)",0.0,0.0,0.0,False
+post,85,"VIndex(5, :PQLoad₊Q_load_p)",0.0,0.0,-0.9225240963471678,True
+post,86,"VIndex(5, :PQLoad₊z_fraction)",1.0,1.0,1.0,False
+post,87,"VIndex(5, :PQLoad₊vref2)",0.9225240963471678,0.9225240963471678,0.9225240963471678,False
+post,88,"VIndex(5, :PQLoad₊P_load_p)",0.85,0.85,2.092496937363038,True
+post,89,"VIndex(8, :PQLoad₊Q_load_p)",0.0,0.0,0.0,False
+post,90,"VIndex(8, :PQLoad₊z_fraction)",0.0,0.0,0.0,False
+post,91,"VIndex(8, :PQLoad₊vref2)",1.0,1.0,1.0,False
+post,92,"VIndex(8, :PQLoad₊P_load_p)",0.0,0.0,0.0,False
+post,93,"VIndex(6, :symbolic_slack₊V)",1.0,1.0,1.0,False
+post,94,"VIndex(6, :symbolic_slack₊δ)",0.0,0.0,0.0,False
+post,95,"VIndex(7, :inv7₊droop₊Kp)",7.5398223686155035,7.5398223686155035,18.84955592153876,True
+post,96,"VIndex(7, :inv7₊droop₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+post,97,"VIndex(7, :inv7₊droop₊Kq)",0.05,0.05,0.05,False
+post,98,"VIndex(7, :inv7₊droop₊τ_q)",0.02,0.02,0.02,False
+post,99,"VIndex(7, :inv7₊droop₊Vset)",1.0,1.0,1.0,False
+post,100,"VIndex(7, :inv7₊droop₊τ_p)",0.02,1.0,0.25,True
+post,101,"VIndex(7, :inv7₊droop₊Qset)",0.05232080478579085,0.05232080478579085,0.05232080478579085,False
+post,102,"VIndex(7, :inv7₊droop₊Pset)",0.10010511385855865,0.10010511385855865,0.4,True
+post,103,"VIndex(7, :inv7₊vsrc₊CC1_F)",1.0,1.0,1.0,False
+post,104,"VIndex(7, :inv7₊vsrc₊CC1_KI)",0.0018,0.0018,0.0018,False
+post,105,"VIndex(7, :inv7₊vsrc₊C)",0.1086,0.1086,0.1086,False
+post,106,"VIndex(7, :inv7₊vsrc₊CC1_KP)",0.9817,0.9817,0.9817,False
+post,107,"VIndex(7, :inv7₊vsrc₊X_virt)",0.0,0.0,0.0,False
+post,108,"VIndex(7, :inv7₊vsrc₊Rf)",0.0139,0.0139,0.0139,False
+post,109,"VIndex(7, :inv7₊vsrc₊CC1_Fcoupl)",1.0,1.0,1.0,False
+post,110,"VIndex(7, :inv7₊vsrc₊I_max)",1.2,1.2,1.2,False
+post,111,"VIndex(7, :inv7₊vsrc₊Lf)",0.0196,0.0196,0.0196,False
+post,112,"VIndex(7, :inv7₊vsrc₊Lg)",0.0209,0.0209,0.0209,False
+post,113,"VIndex(7, :inv7₊vsrc₊VC_KP)",1.4476,1.4476,1.4476,False
+post,114,"VIndex(7, :inv7₊vsrc₊VC_F)",1.0,1.0,1.0,False
+post,115,"VIndex(7, :inv7₊vsrc₊ω0)",376.99111843077515,376.99111843077515,376.99111843077515,False
+post,116,"VIndex(7, :inv7₊vsrc₊Rg)",0.01,0.01,0.01,False
+post,117,"VIndex(7, :inv7₊vsrc₊R_virt)",0.0,0.0,0.0,False
+post,118,"VIndex(7, :inv7₊vsrc₊VC_Fcoupl)",1.0,1.0,1.0,False
+post,119,"VIndex(7, :inv7₊vsrc₊VC_KI)",0.0273,0.0273,0.0273,False
+post,120,"VIndex(7, :inv7₊vsrc₊filter₊connected)",1.0,1.0,1.0,False
+post,121,line1:line_sym₊R,0.1209434790198695,0.1209434790198695,0.1209434790198695,False
+post,122,line1:line_sym₊X,0.4513672085462936,0.4513672085462936,0.4513672085462936,False
+post,123,line1:line_sym₊G_src,0.0,0.0,0.0,False
+post,124,line1:line_sym₊B_src,0.0,0.0,0.0,False
+post,125,line1:line_sym₊G_dst,0.0,0.0,0.0,False
+post,126,line1:line_sym₊B_dst,0.0,0.0,0.0,False
+post,127,line1:line_sym₊r_src,1.0,1.0,1.0,False
+post,128,line1:line_sym₊r_dst,1.0,1.0,1.0,False
+post,129,line1:line_sym₊active,1.0,1.0,1.0,False
+post,130,line5:line_sym₊R,0.13550735345681714,0.13550735345681714,0.13550735345681714,False
+post,131,line5:line_sym₊X,0.5057203279000357,0.5057203279000357,0.5057203279000357,False
+post,132,line5:line_sym₊G_src,0.0,0.0,0.0,False
+post,133,line5:line_sym₊B_src,0.0,0.0,0.0,False
+post,134,line5:line_sym₊G_dst,0.0,0.0,0.0,False
+post,135,line5:line_sym₊B_dst,0.0,0.0,0.0,False
+post,136,line5:line_sym₊r_src,1.0,1.0,1.0,False
+post,137,line5:line_sym₊r_dst,1.0,1.0,1.0,False
+post,138,line5:line_sym₊active,1.0,1.0,1.0,False
+post,139,line6:line_sym₊R,0.1209434790198695,0.1209434790198695,0.1209434790198695,False
+post,140,line6:line_sym₊X,0.4513672085462936,0.4513672085462936,0.4513672085462936,False
+post,141,line6:line_sym₊G_src,0.0,0.0,0.0,False
+post,142,line6:line_sym₊B_src,0.0,0.0,0.0,False
+post,143,line6:line_sym₊G_dst,0.0,0.0,0.0,False
+post,144,line6:line_sym₊B_dst,0.0,0.0,0.0,False
+post,145,line6:line_sym₊r_src,1.0,1.0,1.0,False
+post,146,line6:line_sym₊r_dst,1.0,1.0,1.0,False
+post,147,line6:line_sym₊active,1.0,1.0,1.0,False
+post,148,line9:line_sym₊R,0.04050376292684206,0.04050376292684206,0.04050376292684206,False
+post,149,line9:line_sym₊X,0.15116210114069928,0.15116210114069928,0.15116210114069928,False
+post,150,line9:line_sym₊G_src,0.0,0.0,0.0,False
+post,151,line9:line_sym₊B_src,0.0,0.0,0.0,False
+post,152,line9:line_sym₊G_dst,0.0,0.0,0.0,False
+post,153,line9:line_sym₊B_dst,0.0,0.0,0.0,False
+post,154,line9:line_sym₊r_src,1.0,1.0,1.0,False
+post,155,line9:line_sym₊r_dst,1.0,1.0,1.0,False
+post,156,line9:line_sym₊active,1.0,1.0,1.0,False
+post,157,line8:line_sym₊R,0.11927144935600034,0.11927144935600034,0.11927144935600034,False
+post,158,line8:line_sym₊X,0.44512710888897156,0.44512710888897156,0.44512710888897156,False
+post,159,line8:line_sym₊G_src,0.0,0.0,0.0,False
+post,160,line8:line_sym₊B_src,0.0,0.0,0.0,False
+post,161,line8:line_sym₊G_dst,0.0,0.0,0.0,False
+post,162,line8:line_sym₊B_dst,0.0,0.0,0.0,False
+post,163,line8:line_sym₊r_src,1.0,1.0,1.0,False
+post,164,line8:line_sym₊r_dst,1.0,1.0,1.0,False
+post,165,line8:line_sym₊active,1.0,1.0,1.0,False
+post,166,line4:line_sym₊R,0.11711269009163834,0.11711269009163834,0.11711269009163834,False
+post,167,line4:line_sym₊X,0.4370705096330626,0.4370705096330626,0.4370705096330626,False
+post,168,line4:line_sym₊G_src,0.0,0.0,0.0,False
+post,169,line4:line_sym₊B_src,0.0,0.0,0.0,False
+post,170,line4:line_sym₊G_dst,0.0,0.0,0.0,False
+post,171,line4:line_sym₊B_dst,0.0,0.0,0.0,False
+post,172,line4:line_sym₊r_src,1.0,1.0,1.0,False
+post,173,line4:line_sym₊r_dst,1.0,1.0,1.0,False
+post,174,line4:line_sym₊active,1.0,1.0,1.0,False
+post,175,line7:line_sym₊R,0.1437883583902893,0.1437883583902893,0.1437883583902893,False
+post,176,line7:line_sym₊X,0.5366254590494824,0.5366254590494824,0.5366254590494824,False
+post,177,line7:line_sym₊G_src,0.0,0.0,0.0,False
+post,178,line7:line_sym₊B_src,0.0,0.0,0.0,False
+post,179,line7:line_sym₊G_dst,0.0,0.0,0.0,False
+post,180,line7:line_sym₊B_dst,0.0,0.0,0.0,False
+post,181,line7:line_sym₊r_src,1.0,1.0,1.0,False
+post,182,line7:line_sym₊r_dst,1.0,1.0,1.0,False
+post,183,line7:line_sym₊active,0.0,0.0,0.0,False
+post,184,line2:line_sym₊R,0.07771664353145487,0.07771664353145487,0.05140712362360391,True
+post,185,line2:line_sym₊X,0.29004246225310876,0.29004246225310876,0.1918539972342641,True
+post,186,line2:line_sym₊G_src,0.0,0.0,0.0,False
+post,187,line2:line_sym₊B_src,0.0,0.0,0.0,False
+post,188,line2:line_sym₊G_dst,0.0,0.0,0.0,False
+post,189,line2:line_sym₊B_dst,0.0,0.0,0.0,False
+post,190,line2:line_sym₊r_src,1.0,1.0,1.0,False
+post,191,line2:line_sym₊r_dst,1.0,1.0,1.0,False
+post,192,line2:line_sym₊active,1.0,1.0,1.0,False
+post,193,line3:line_sym₊R,0.3920118931071915,0.3920118931071915,0.259303579454355,True
+post,194,line3:line_sym₊X,1.4630083022472986,1.4630083022472986,0.9677341331081263,True
+post,195,line3:line_sym₊G_src,0.0,0.0,0.0,False
+post,196,line3:line_sym₊B_src,0.0,0.0,0.0,False
+post,197,line3:line_sym₊G_dst,0.0,0.0,0.0,False
+post,198,line3:line_sym₊B_dst,0.0,0.0,0.0,False
+post,199,line3:line_sym₊r_src,1.0,1.0,1.0,False
+post,200,line3:line_sym₊r_dst,1.0,1.0,1.0,False
+post,201,line3:line_sym₊active,1.0,1.0,1.0,False
+post,202,line11:line_sym₊R,0.02888605414090633,0.02888605414090633,0.02888605414090633,False
+post,203,line11:line_sym₊X,0.1078042216840478,0.1078042216840478,0.1078042216840478,False
+post,204,line11:line_sym₊G_src,0.0,0.0,0.0,False
+post,205,line11:line_sym₊B_src,0.0,0.0,0.0,False
+post,206,line11:line_sym₊G_dst,0.0,0.0,0.0,False
+post,207,line11:line_sym₊B_dst,0.0,0.0,0.0,False
+post,208,line11:line_sym₊r_src,1.0,1.0,1.0,False
+post,209,line11:line_sym₊r_dst,1.0,1.0,1.0,False
+post,210,line11:line_sym₊active,1.0,1.0,1.0,False
+post,211,line10:line_sym₊R,0.1531473639659886,0.1531473639659886,0.1531473639659886,False
+post,212,line10:line_sym₊X,0.5715537433663126,0.5715537433663126,0.5715537433663126,False
+post,213,line10:line_sym₊G_src,0.0,0.0,0.0,False
+post,214,line10:line_sym₊B_src,0.0,0.0,0.0,False
+post,215,line10:line_sym₊G_dst,0.0,0.0,0.0,False
+post,216,line10:line_sym₊B_dst,0.0,0.0,0.0,False
+post,217,line10:line_sym₊r_src,1.0,1.0,1.0,False
+post,218,line10:line_sym₊r_dst,1.0,1.0,1.0,False
+post,219,line10:line_sym₊active,1.0,1.0,1.0,False

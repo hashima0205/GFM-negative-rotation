@@ -1,0 +1,8 @@
+frequency_reference = "60 Hz; arithmetic mean internal frequency deviations of buses 2,3,7"
+horizon_s = 1000.0
+frequency_axis = [-0.04, -0.015, -0.005, 0.0, 0.005, 0.015, 0.04]
+save_s = 0.2
+rotation_of_electrical_states = "Vc, If and Ig of buses 2,3,7 rotate by the imposed common angle shift; dq PI integrators, Qf and Bus1 remain at the postfault stable equilibrium"
+angle_axis = [-1.7496785128252785, -1.723011846158612, -1.696345179491945, -1.6696785128252785, -1.6430118461586118, -1.616345179491945, -1.5896785128252784]
+angle_reference = "fixed slack Bus6; arithmetic mean internal angles of buses 2,3,7"
+washout_initial = "zero for all four machines; independent of imposed frequency"

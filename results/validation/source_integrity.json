@@ -1,0 +1,11 @@
+{
+  "transfer_files_rechecked": 1932,
+  "transfer_failures": [],
+  "original_vsm_tracked_changes": false,
+  "original_vsm_untracked_files_unchanged": [
+    "data/mp4_check_20261106.csv",
+    "data/mp5_check_20261106.csv",
+    "data/mp5_d1_10_check_20261106.csv"
+  ],
+  "original_sources_modified": false
+}

@@ -1,0 +1,14 @@
+{
+  "transfer_path_relative_to_workspace": "droop_transfer",
+  "sha256sums_sha256": "50e741c75dbded3ac5c4d61899ae53f0a71c66313670ca9c24b502dad4762dd9",
+  "manifest_sha256": "6cc443d9d2a80961086e1977775fff2078f7250670ca607e563090c73c902ea4",
+  "checked_files": 1932,
+  "checked_bytes": 686336010,
+  "failures": [],
+  "vsm_repository": "https://github.com/hashima0205/VSM_decelaration",
+  "vsm_code_commit": "584b7519d67adb135404b9b319445ca428ded413",
+  "C_case": "check_mp0p05_H2p5_D1_0_B1_20261106",
+  "C_input_committed_upstream": false,
+  "vsm_remote_head_checked": "e8fe0e535bee84b824f58cd89139467f027c14dc",
+  "vsm_code_difference_since_local_base": "none; only README.md changed in remote commits b8265a9 and e8fe0e5"
+}

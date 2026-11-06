@@ -1,0 +1,2 @@
+case,H,mp,Ddroop,D1,D2,omega_d,Bcap,pre_V5,horizon,classification,remote_turns,pre_max_real,post_max_real,max_algebraic_residual,max_event_z_error
+check_mp0p05_H2p5_D1_0_B1_20261106,2.5,0.05,20.0,0.0,100.0,50.0,1.0,0.996594323887269,1000.0,negative_running,-734.2191172358862,-0.0018315817378364834,-0.0018323790571844734,1.1401990462900358e-13,0.0

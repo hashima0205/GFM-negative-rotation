@@ -1,0 +1,2 @@
+case,H,mp,D1,D2,omega_d,Bcap,grid_k,load_G,P1,P2,P3,P7,tauq,fault_on,T,fault_G,horizon,level
+check_mp0p05_H2p5_D1_10_B1_20261106,2.5,0.05,10,100,50,1,0.6812730259441179,2.2682301152333055,0.5,0.4,0.4,0.4,0.02,1,0.15,20,1000,A

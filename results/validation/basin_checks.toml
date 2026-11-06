@@ -1,0 +1,38 @@
+[[cases]]
+points = 49
+case = "A"
+max_reconstructed_voltage_error = 0.0
+max_root_residual = 7.885252944062576e-12
+max_coordinate_error = 7.632783294297951e-17
+max_initial_state_definition_error = 0.0
+saddle_section_native_max_difference = 0.08696185427370584
+max_algebraic_residual = 5.297171784805952e-15
+
+    [cases.classifications]
+    recovery = 49
+[[cases]]
+points = 49
+case = "B"
+max_reconstructed_voltage_error = 0.0
+max_root_residual = 7.885252944062576e-12
+max_coordinate_error = 7.632783294297951e-17
+max_initial_state_definition_error = 0.0
+saddle_section_native_max_difference = 0.0869618542737054
+max_algebraic_residual = 5.347542221830668e-15
+
+    [cases.classifications]
+    recovery = 30
+    negative_running = 19
+[[cases]]
+points = 49
+case = "C"
+max_reconstructed_voltage_error = 0.0
+max_root_residual = 7.885252944062576e-12
+max_coordinate_error = 0.0
+max_initial_state_definition_error = 0.0
+saddle_section_native_max_difference = 0.08696185427367964
+max_algebraic_residual = 4.849527372528318e-15
+
+    [cases.classifications]
+    recovery = 33
+    negative_running = 16

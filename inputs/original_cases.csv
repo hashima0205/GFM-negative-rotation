@@ -1,0 +1,3 @@
+case,control,mp,taup,H,D1,D2,omega_d,horizon,config
+original_A,Droop,0.02,0.02,,0,0,,1000,original_droop.toml
+original_B,Droop,0.02,1.0,,0,0,,1000,original_droop.toml

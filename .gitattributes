@@ -1,0 +1,11 @@
+*.jl text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.csv text eol=lf
+*.sha256 text eol=lf
+*.csv.gz binary
+*.png binary
+*.pdf binary
+/provenance/reference_results/*.csv -text whitespace=cr-at-eol
+LICENSES/PowerDynamics.txt conflict-marker-size=64

@@ -1,0 +1,56 @@
+[
+  {
+    "source": "droop_original_A",
+    "original_full_sha256": "c76cee7849c77a242e0bdb2763df7c4f3e82881d1cc8c4178d8298fc800f4894",
+    "published_selection": "all timestamps through t_post_s=1000; audited columns only; voltage/current magnitudes from original real/imaginary channels; no temporal resampling or smoothing",
+    "published_rows": 52061,
+    "published_sha256": "311734e635baa97e33408e0b67a608ae0e2cc33a23e164266b76332a34a4484e"
+  },
+  {
+    "source": "droop_original_B",
+    "original_full_sha256": "76ec4aa5e2061868ef1a74315cbd5d0f98711a45980f1995175314a7c2837087",
+    "published_selection": "all timestamps through t_post_s=1000; audited columns only; voltage/current magnitudes from original real/imaginary channels; no temporal resampling or smoothing",
+    "published_rows": 52061,
+    "published_sha256": "1abdfef58487df7eb32eed1db91343b117295bc8d9176f00c94491c013860dd4"
+  },
+  {
+    "source": "VSM_decelaration/runs/current/check_mp0p05_H2p5_D1_0_B1_20261106/response.csv.gz",
+    "sha256": "a19af462a342df97bab84377427e41604fa66a9d0f6877e1edd91cf3ddca3d1c",
+    "published_file": "provenance/reference_results/C_response.csv.gz"
+  },
+  {
+    "source": "VSM_decelaration/runs/current/check_mp0p05_H2p5_D1_0_B1_20261106/result.csv",
+    "sha256": "0611d3d5d5dc1f81ea7a4fcc5ab279ba35854f6a52c0014f8df3dc7a06be7279",
+    "published_file": "provenance/reference_results/C_result.csv"
+  },
+  {
+    "source": "VSM_decelaration/runs/current/check_mp0p05_H2p5_D1_0_B1_20261106/settings.csv",
+    "sha256": "468370cb1e00a529caad4c2ac099b0dc9f7aca1bddd7a6bc0fb4f19b4eaf3497",
+    "published_file": "provenance/reference_results/C_settings.csv"
+  },
+  {
+    "source": "VSM_decelaration/runs/current/check_mp0p05_H2p5_D1_0_B1_20261106/configuration.sha256",
+    "sha256": "9b7090a37a108e6c73c813103854385cefae2c8da323bd12553f3bef231d536a",
+    "published_file": "provenance/reference_results/C_configuration.sha256"
+  },
+  {
+    "source": "VSM_decelaration/runs/current/check_mp0p05_H2p5_D1_10_B1_20261106/response.csv.gz",
+    "sha256": "93b94c78e3d152d2a0c0d2c265d6f03c537e01159054e0e08ff70527c575ffee",
+    "published_file": "provenance/reference_results/C_D1_10_response.csv.gz"
+  },
+  {
+    "source": "VSM_decelaration/runs/current/check_mp0p05_H2p5_D1_10_B1_20261106/result.csv",
+    "sha256": "977009e501599c91ed376e30f495556c0aaf374538b7bba0aa61b194c44d2347",
+    "published_file": "provenance/reference_results/C_D1_10_result.csv"
+  },
+  {
+    "source": "VSM_decelaration/runs/current/check_mp0p05_H2p5_D1_10_B1_20261106/settings.csv",
+    "sha256": "35a5a9a0ac084a1843498464deecf12365b13b6457b3f840941b86329a09e249",
+    "published_file": "provenance/reference_results/C_D1_10_settings.csv"
+  },
+  {
+    "source": "VSM_decelaration/runs/current/check_mp0p05_H2p5_D1_10_B1_20261106/configuration.sha256",
+    "sha256": "17e8dfa33c586dc5362876a74eb0fccc25392ab90f7257291bdc8f19eb021dcc",
+    "published_file": "provenance/reference_results/C_D1_10_configuration.sha256"
+  }
+]
