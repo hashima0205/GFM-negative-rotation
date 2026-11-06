@@ -1,0 +1,11 @@
+angle_offset_rad = [-0.08, 0.08]
+angle_count = 7
+frequency_Hz = [-0.04, -0.015, -0.005, 0.0, 0.005, 0.015, 0.04]
+horizon_s = 1000.0
+save_s = 0.2
+plot_angle_offset_rad = [-0.087, 0.087]
+plot_frequency_Hz = [-0.045, 0.045]
+representative_ids = [1, 7, 26, 43, 49]
+representative_modulus = 7
+representative_remainder = 4
+root_seed_shifts_rad = [-2.5,-1.5,-0.7,-0.3,-0.1,0.1,0.3,0.7,1.5,2.5]

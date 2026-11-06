@@ -7,33 +7,32 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator, FormatStrFormatter
-ROOT=Path(__file__).resolve().parents[1]
-BUS=[1,2,3,7];COLORS=['#202020','#0072B2','#D55E00','#009E73'];STYLES=['-','--',':','-.']
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"src"))
+from postprocess import ROOT,RESULTS,verify,case_info,study,main_cases,section_settings,native_coordinates,base_frequency,control_label,save_figure,write_check,option,safe_output
+BUS=study()["network"]["gfm_buses"];COLORS=study()["figures"]["machine_colors"];STYLES=study()["figures"]["machine_styles"]
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':9,'pdf.fonttype':42,'axes.spines.top':False,'axes.spines.right':False})
-def save(fig,path):
- path.parent.mkdir(parents=True,exist_ok=True)
- for ext in ['png','pdf']:fig.savefig(path.with_suffix('.'+ext),dpi=240,bbox_inches='tight',facecolor='white')
- plt.close(fig)
-def obs(case):return pd.read_csv(ROOT/'results'/case/'observations.csv.gz')
+save=save_figure
+def obs(case):return pd.read_csv(verify(RESULTS/case)/'observations.csv.gz')
 def main_time():
- data={c:obs(c) for c in ['A','B','C']}
+ data={c:obs(c) for c in main_cases()}
  for long in [False,True]:
   fig,axes=plt.subplots(1,3,figsize=(7.2,2.6),sharex=True,sharey=True)
-  limits=(-.2,1000 if long else 8)
+  limits=(study()['figures']['short_time_s'][0],float(case_info(main_cases()[0])[0]['horizon']) if long else study()['figures']['short_time_s'][1])
   for ax,(case,d) in zip(axes,data.items()):
    v=d[(d.t_post_s>=limits[0])&(d.t_post_s<=limits[1])]
    for b,color,style in zip(BUS,COLORS,STYLES):
     ax.plot(v.t_post_s,v[f'b{b}_delta_rad']-d[f'b{b}_delta_rad'].iloc[0],color=color,ls=style,lw=1.25,label=f'Bus {b}')
-   for t in [-.15,0]:ax.axvline(t,color='.65',ls=':',lw=.7)
-   ax.set_title({'A':'(a) Droop, '+r'$\tau_p=0.02$ s','B':'(b) Droop, '+r'$\tau_p=1.00$ s','C':'(c) VSM, $H=2.5$ s'}[case],fontsize=9)
+   for t in [case_info(case)[1]['fault_on']-case_info(case)[1]['clearing'],0]:ax.axvline(t,color='.65',ls=':',lw=.7)
+   ax.set_title('('+chr(97+main_cases().index(case))+') '+control_label(case,math=True),fontsize=9)
    ax.set_xlabel('Time from clearing [s]');ax.set_xlim(limits);ax.grid(alpha=.18)
-   ax.text(.04,.06,'Recovery' if case=='A' else 'Negative rotation',transform=ax.transAxes,fontsize=8)
+   ax.text(.04,.06,'Negative rotation' if 'negative_running' in pd.read_csv(RESULTS/case/'machines.csv').classification.values else 'Recovery',transform=ax.transAxes,fontsize=8)
   axes[0].set_ylabel(r'$\delta_i(t)-\delta_i^{\mathrm{pre}}$ [rad]')
   fig.legend(*axes[0].get_legend_handles_labels(),loc='upper center',ncol=4,bbox_to_anchor=(.5,1.06),frameon=False)
   fig.subplots_adjust(wspace=.12,bottom=.22,top=.82)
   save(fig,ROOT/('figures/details/time_response_ABC_long' if long else 'figures/paper/time_response_ABC'))
- for case in ['A','B','C','C_D1_10']:
-  d=obs(case);v=d[(d.t_post_s>=-.2)&(d.t_post_s<=12)]
+ for case in main_cases()+study()['cases']['additional']:
+  d=obs(case);v=d[(d.t_post_s>=study()['figures']['detail_time_s'][0])&(d.t_post_s<=study()['figures']['detail_time_s'][1])]
   fig,axes=plt.subplots(4,2,figsize=(8.2,9),sharex=True)
   fields=[('delta_rad','Internal angle change [rad]'),('df_Hz','Internal frequency deviation [Hz]'),('U_pu','Terminal voltage [pu]'),('Ig_pu','Grid-side current [pu]'),('Pcap_pu','Measured active power [pu]'),('Qcap_pu','Measured reactive power [pu]'),('If_pu','Inverter-side current [pu]'),('limit_factor','Current-command scale factor')]
   for ax,(key,label) in zip(axes.flat,fields):
@@ -45,8 +44,8 @@ def main_time():
   fig.legend(*axes[0,0].get_legend_handles_labels(),loc='upper center',ncol=4,frameon=False)
   fig.suptitle(case+' — individual-machine responses',y=1.02);fig.tight_layout(rect=[0,0,1,.97]);save(fig,ROOT/'figures/details'/f'{case}_responses')
  fig,axes=plt.subplots(2,1,figsize=(6.9,4.2),sharex=True)
- for case,basecolor in [('C','#B2182B'),('C_D1_10','#2166AC')]:
-  d=obs(case);v=d[(d.t_post_s>=-.2)&(d.t_post_s<=10)]
+ for case,basecolor in zip(study()['cases']['damping_comparison'],['#B2182B','#2166AC']):
+  d=obs(case);v=d[(d.t_post_s>=study()['figures']['damping_time_s'][0])&(d.t_post_s<=study()['figures']['damping_time_s'][1])]
   for b,style in zip(BUS,STYLES):
    axes[0].plot(v.t_post_s,v[f'b{b}_delta_rad']-d[f'b{b}_delta_rad'].iloc[0],color=basecolor,ls=style,lw=1,label=case+f', Bus {b}')
    axes[1].plot(v.t_post_s,v[f'b{b}_df_Hz'],color=basecolor,ls=style,lw=1)
@@ -55,9 +54,9 @@ def main_time():
  fig.legend(*axes[0].get_legend_handles_labels(),loc='upper center',ncol=4,fontsize=7,frameon=False,bbox_to_anchor=(.5,1.04));fig.tight_layout(rect=[0,0,1,.9]);save(fig,ROOT/'figures/details/C_D1_comparison')
 def local_basins():
  palette={'recovery':'#56B4E9','negative_running':'#D55E00','positive_running':'#CC79A7','unresolved':'#BBBBBB','numerical_failure':'#333333'}
- for case in ['A','B','C']:
-  folder=ROOT/'results/basins'/case;files=sorted((folder/'points').glob('*.toml'))
-  if len(files)!=49:raise RuntimeError(f'{case}: expected 49 classified points, found {len(files)}')
+ for case in main_cases():
+  folder=verify(option('--local-results',RESULTS/'basins')/case);files=sorted((folder/'points').glob('*.toml'))
+  if len(files)!=section_settings(True)['angle_count']*len(section_settings(True)['frequency_Hz']):raise RuntimeError(f'{case}: expected 49 classified points, found {len(files)}')
   points=[tomllib.loads(p.read_text()) for p in files];roots=pd.read_csv(folder/'roots.csv')
   fig,ax=plt.subplots(figsize=(3.5,2.8))
   for label,color in palette.items():
@@ -73,17 +72,16 @@ def local_basins():
     candidates=[p for p in candidates if abs(p['theta_actual']-roots.remote_angle_rad.iloc[0])+abs(p['df_actual'])>1e-6] or candidates
     p=min(candidates,key=lambda p:abs(p['theta_actual']-roots.remote_angle_rad.iloc[0])+abs(p['df_actual']))
     d=pd.read_csv(folder/'points'/f"{p['point']:03d}_trajectory.csv.gz")
-    theta=d[['x26','x39','x52']].mean(axis=1)
-    df=d[['x25','x38','x51']].mean(axis=1)*60 if case=='C' else np.mean([60*.05*(.4-d[f'x{i}']) for i in [25,38,51]],axis=0)
+    theta,df=native_coordinates(d,case)
     ax.plot(theta,df,color=color,lw=.9,alpha=.9,label=label.replace('_',' ')+' trajectory (projection)',zorder=3)
-  ax.set(xlabel='Mean internal angle to Bus6 [rad]',ylabel='Mean internal frequency deviation [Hz]',xlim=(roots.remote_angle_rad.iloc[0]-.087,roots.remote_angle_rad.iloc[0]+.087),ylim=(-.045,.045))
+  ax.set(xlabel='Mean internal angle to Bus6 [rad]',ylabel='Mean internal frequency deviation [Hz]',xlim=tuple(roots.remote_angle_rad.iloc[0]+v for v in section_settings(True)['plot_angle_offset_rad']),ylim=section_settings(True)['plot_frequency_Hz'])
   ax.xaxis.set_major_locator(MaxNLocator(4));ax.xaxis.set_major_formatter(FormatStrFormatter('%.2f'))
   ax.set_title(case+' — conditional classification at 1000 s',fontsize=9);ax.grid(alpha=.15)
   ax.legend(loc='upper left',bbox_to_anchor=(1.02,1),fontsize=6,frameon=False)
   save(fig,ROOT/'figures/details'/f'basin_local_{case}')
-  pd.DataFrame([{k:v for k,v in p.items() if k not in ['initial_native','final_native','initial_bus_voltage_ri','final_bus_voltage_ri','machine_metrics']} for p in points]).to_csv(folder/'classification.csv',index=False)
+
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('--only',choices=['time','basins','local-basins','all'],default='all');a=parser.parse_args()
+ parser=argparse.ArgumentParser();parser.add_argument('--only',choices=['time','basins','local-basins','all'],default='all');parser.add_argument('--output');parser.add_argument('--results');parser.add_argument('--section-results');parser.add_argument('--local-results');a=parser.parse_args()
  if a.only in ['time','all']:main_time()
  if a.only in ['local-basins','all']:local_basins()
  if a.only in ['basins','all']:

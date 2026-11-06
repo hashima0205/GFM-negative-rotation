@@ -1,0 +1,252 @@
+"original_render_release" = "907d0e922bd360fd576653fcbc56a0481ad88b1c"
+"presentation_hash" = "561a7a61a08d258a8b1a485c110365bfdbaa52ebbee310ae97a887ae9e47dd86"
+
+["figures"]
+
+["figures"."figures/details/A_responses"]
+"datasets" = ["results/A"]
+"command" = "python scripts/plot.py --only time"
+
+["figures"."figures/details/A_responses"."files"]
+"figures/details/A_responses.png" = "1be7eb9def01e2f79dd239866a58ebd9a62b658ff00ab75f04cff78630c0df3c"
+"figures/details/A_responses.pdf" = "2c6514de7815a76891fd6f175d0f6419a7a67772dbb830d35e7375050bb489a3"
+
+["figures"."figures/details/B_responses"]
+"datasets" = ["results/B"]
+"command" = "python scripts/plot.py --only time"
+
+["figures"."figures/details/B_responses"."files"]
+"figures/details/B_responses.png" = "1f8db913e09fb9aac0d9bc0b37cf2d8e38ebd34b05850be47a2813d831b8444d"
+"figures/details/B_responses.pdf" = "b3e6790cceb7e08b7152ea43f11624329ad94d8bd203f77edee25bbd84329a80"
+
+["figures"."figures/details/C_D1_10_responses"]
+"datasets" = ["results/C_D1_10"]
+"command" = "python scripts/plot.py --only time"
+
+["figures"."figures/details/C_D1_10_responses"."files"]
+"figures/details/C_D1_10_responses.png" = "4e2b269bacb629b4f000a2edd32e60e1f5e44e20f08cc36b4c3d9d6c38fcf141"
+"figures/details/C_D1_10_responses.pdf" = "5e2639cc051768a991a097ff72006b4c2cdcd3a5556689feae843e89984bef3e"
+
+["figures"."figures/details/C_D1_comparison"]
+"datasets" = ["results/C", "results/C_D1_10"]
+"command" = "python scripts/plot.py --only time"
+
+["figures"."figures/details/C_D1_comparison"."files"]
+"figures/details/C_D1_comparison.png" = "397b448b10b7e8e091de3ee286b9457fc2c505aa3a60e1120a572aff8a4b812c"
+"figures/details/C_D1_comparison.pdf" = "7937e99d66c1696daea980b656ee8d1eb793b273a59a404ade15ca4245d156b0"
+
+["figures"."figures/details/C_responses"]
+"datasets" = ["results/C"]
+"command" = "python scripts/plot.py --only time"
+
+["figures"."figures/details/C_responses"."files"]
+"figures/details/C_responses.png" = "ece62687b3b4a3e5087e63d64e8d2d856d73b5aed9e114e8ed51d8d0293e9327"
+"figures/details/C_responses.pdf" = "cfb1126167f0324261b78e9dfbb01f841f24e1cd0cbbf7e8541d263efe01bc47"
+
+["figures"."figures/details/basin_A_wide"]
+"datasets" = ["results/fault_basins/A", "results/A", "results/basins/A"]
+"command" = "python scripts/plot.py --only basins"
+
+["figures"."figures/details/basin_A_wide"."files"]
+"figures/details/basin_A_wide.png" = "0cd0de27ce0e1c7b2551b876c7e27791c103aca2d8c8b3854cf2a9a1155b3c3e"
+"figures/details/basin_A_wide.pdf" = "74166f8a6d220ed836ddd91331a17ec0775301d882e825aa41d637460e134975"
+
+["figures"."figures/details/basin_B_wide"]
+"datasets" = ["results/fault_basins/B", "results/B", "results/basins/B"]
+"command" = "python scripts/plot.py --only basins"
+
+["figures"."figures/details/basin_B_wide"."files"]
+"figures/details/basin_B_wide.png" = "f4bff94e511834b2390e6cd47e9a18883255d7f283a54b17d7b98e273de02205"
+"figures/details/basin_B_wide.pdf" = "2f9e2336fbd18fa4193d387bffc818a4027bf47fb14d29a1073154886fc3f69c"
+
+["figures"."figures/details/basin_C_wide"]
+"datasets" = ["results/fault_basins/C", "results/C", "results/basins/C"]
+"command" = "python scripts/plot.py --only basins"
+
+["figures"."figures/details/basin_C_wide"."files"]
+"figures/details/basin_C_wide.png" = "28f777c01fbf570bc25f7bd8407a478e0655a9e30cbe6eefa4e3c262f6ec8282"
+"figures/details/basin_C_wide.pdf" = "4ba60a51764798bb46f8057f86d7134eb5f324c4a6825e790233ab9728b17c69"
+
+["figures"."figures/details/basin_local_A"]
+"datasets" = ["results/basins/A"]
+"command" = "python scripts/plot.py --only local-basins"
+
+["figures"."figures/details/basin_local_A"."files"]
+"figures/details/basin_local_A.png" = "3ff2b7cb827bb598c4ee9144abdbc773cc61aa1dd52faacad86af8771f3bd9ac"
+"figures/details/basin_local_A.pdf" = "9caf210e3d364e859993a619c0628cfd5e67c7aaf8a335953751bd9ebdb9a471"
+
+["figures"."figures/details/basin_local_B"]
+"datasets" = ["results/basins/B"]
+"command" = "python scripts/plot.py --only local-basins"
+
+["figures"."figures/details/basin_local_B"."files"]
+"figures/details/basin_local_B.png" = "df32610a0a2146d22a7aceb8182bf00239f73bb0465ce4e6197a14566523aadc"
+"figures/details/basin_local_B.pdf" = "a8ad5d1b4dbfd76bfec6f1d759acd3de518f4ec4c8834711fcde3d572daf0103"
+
+["figures"."figures/details/basin_local_C"]
+"datasets" = ["results/basins/C"]
+"command" = "python scripts/plot.py --only local-basins"
+
+["figures"."figures/details/basin_local_C"."files"]
+"figures/details/basin_local_C.png" = "ac6e43b84cb80ae5b902bdfaff1d3ab8968c6be898cff7ce3ffd0b69a75693d3"
+"figures/details/basin_local_C.pdf" = "bca8b8f088f3f0cbb41e3fef6f9041832d5000045c595349c383e02362481e7b"
+
+["figures"."figures/details/power_flow/A_post_0s"]
+"datasets" = ["results/power_flow/A_post_0s"]
+"command" = "python scripts/power_flow.py"
+
+["figures"."figures/details/power_flow/A_post_0s"."files"]
+"figures/details/power_flow/A_post_0s.png" = "77ccd26525fa37facdc1b923507dfc5297513f9683966a2ecbec2dd0640fe22f"
+"figures/details/power_flow/A_post_0s.pdf" = "57cca3de595203b578b9bbfcd641c925a6cc33e8db420b6ecac83c5cc36d69dd"
+
+["figures"."figures/details/power_flow/A_post_1s"]
+"datasets" = ["results/power_flow/A_post_1s"]
+"command" = "python scripts/power_flow.py"
+
+["figures"."figures/details/power_flow/A_post_1s"."files"]
+"figures/details/power_flow/A_post_1s.png" = "c4e1f3e157069a125a783feb3464fb6eec08c3884a2706be9bb5953fc957ae96"
+"figures/details/power_flow/A_post_1s.pdf" = "e5a08d3fb1193b218233e5bbefae3c43006c08c40e44328e929c5d8df472c38b"
+
+["figures"."figures/details/power_flow/A_post_5s"]
+"datasets" = ["results/power_flow/A_post_5s"]
+"command" = "python scripts/power_flow.py"
+
+["figures"."figures/details/power_flow/A_post_5s"."files"]
+"figures/details/power_flow/A_post_5s.png" = "65f3f8b2c2a7137b7f1b55bcc6a8e7638d3f2f8a7b68960fcfa7b6de514c1636"
+"figures/details/power_flow/A_post_5s.pdf" = "588dd5fe7fd29eacbe7ba91e94d036732fff7c6898a2c41b7c9f0dcd94c3ff21"
+
+["figures"."figures/details/power_flow/A_pre_equilibrium"]
+"datasets" = ["results/power_flow/common_pre_equilibrium"]
+"command" = "python scripts/power_flow.py"
+
+["figures"."figures/details/power_flow/A_pre_equilibrium"."files"]
+"figures/details/power_flow/A_pre_equilibrium.png" = "103ceca0869e0fe4c51adf2e0d5468a19defab6a71c139451e9a1455efb35617"
+"figures/details/power_flow/A_pre_equilibrium.pdf" = "930274fc620bf342b2fafe3a6417a75506603e743cb07dd570deb1e46abd7c33"
+
+["figures"."figures/details/power_flow/B_post_0s"]
+"datasets" = ["results/power_flow/B_post_0s"]
+"command" = "python scripts/power_flow.py"
+
+["figures"."figures/details/power_flow/B_post_0s"."files"]
+"figures/details/power_flow/B_post_0s.png" = "b85bd5be9e8316277618b7eab1b3501c3ca4149f7629c1e002ce1ef0c1c065d6"
+"figures/details/power_flow/B_post_0s.pdf" = "3df30963b3487d308b414f99080b6c67809c1c0d05ca5e2a7a743c59ab4af069"
+
+["figures"."figures/details/power_flow/B_post_1s"]
+"datasets" = ["results/power_flow/B_post_1s"]
+"command" = "python scripts/power_flow.py"
+
+["figures"."figures/details/power_flow/B_post_1s"."files"]
+"figures/details/power_flow/B_post_1s.png" = "c72feafce546e14a3603c7eb591bdde4e8c846165a3e2a687dc77e1c6a43d067"
+"figures/details/power_flow/B_post_1s.pdf" = "ca92a81d099f81fd3f452785951986b80ac455992b0450c779a7d591592734e2"
+
+["figures"."figures/details/power_flow/B_post_5s"]
+"datasets" = ["results/power_flow/B_post_5s"]
+"command" = "python scripts/power_flow.py"
+
+["figures"."figures/details/power_flow/B_post_5s"."files"]
+"figures/details/power_flow/B_post_5s.png" = "55023dd2d2ab51babf01ee5250cea92d968e789ded6600b2081fdb795b7e71f2"
+"figures/details/power_flow/B_post_5s.pdf" = "18f06964c32540be30eb8b77880338aae48d23dcaeb42c6ad76ab1a39c92447e"
+
+["figures"."figures/details/power_flow/B_pre_equilibrium"]
+"datasets" = ["results/power_flow/common_pre_equilibrium"]
+"command" = "python scripts/power_flow.py"
+
+["figures"."figures/details/power_flow/B_pre_equilibrium"."files"]
+"figures/details/power_flow/B_pre_equilibrium.png" = "8b87cb1666c9662f75c5b1f694de87a5648e9184167f300eb3e32a641066065d"
+"figures/details/power_flow/B_pre_equilibrium.pdf" = "5edecc22ed3b15c373da690e63888e3118a47ce0c9fd26153d8c8ce30ddfef96"
+
+["figures"."figures/details/power_flow/C_post_0s"]
+"datasets" = ["results/power_flow/C_post_0s"]
+"command" = "python scripts/power_flow.py"
+
+["figures"."figures/details/power_flow/C_post_0s"."files"]
+"figures/details/power_flow/C_post_0s.png" = "430e4cbd3609edd7e7b4feec792821fe6e1ed281be1e0494f7e0767c9b1c06a3"
+"figures/details/power_flow/C_post_0s.pdf" = "d4c70b977a968c44208f03bbee8bd5392d088e485d3ab9a73d0b65ee26ab8c97"
+
+["figures"."figures/details/power_flow/C_post_1s"]
+"datasets" = ["results/power_flow/C_post_1s"]
+"command" = "python scripts/power_flow.py"
+
+["figures"."figures/details/power_flow/C_post_1s"."files"]
+"figures/details/power_flow/C_post_1s.png" = "4594c18a5289107e99660af76ba86959ece1d24a6a28db8f03610d7e2e4071ec"
+"figures/details/power_flow/C_post_1s.pdf" = "9a12a521df6b67b018e868b0205342a3a1fd01ae45e3397fb997457c4af92b67"
+
+["figures"."figures/details/power_flow/C_post_5s"]
+"datasets" = ["results/power_flow/C_post_5s"]
+"command" = "python scripts/power_flow.py"
+
+["figures"."figures/details/power_flow/C_post_5s"."files"]
+"figures/details/power_flow/C_post_5s.png" = "34c8fe7b30cbc74618624fe4b8b40d426e3d750cbe08118144a18c92f44c4bcb"
+"figures/details/power_flow/C_post_5s.pdf" = "e2d6f69fa7735961380958d17f07875ea3cf02bd5ecb42b0f395db1374c78ef3"
+
+["figures"."figures/details/power_flow/C_pre_equilibrium"]
+"datasets" = ["results/power_flow/common_pre_equilibrium"]
+"command" = "python scripts/power_flow.py"
+
+["figures"."figures/details/power_flow/C_pre_equilibrium"."files"]
+"figures/details/power_flow/C_pre_equilibrium.png" = "a96f38ebf1e68ca5d2246e93de5e0d288009ed21a1e275c0474e8883ce340445"
+"figures/details/power_flow/C_pre_equilibrium.pdf" = "951378eba95b9a7779524bcf3b455d86d52321fbc484848aa660a2983a2cce4d"
+
+["figures"."figures/details/power_flow/common_post_equilibrium"]
+"datasets" = ["results/power_flow/common_post_equilibrium"]
+"command" = "python scripts/power_flow.py"
+
+["figures"."figures/details/power_flow/common_post_equilibrium"."files"]
+"figures/details/power_flow/common_post_equilibrium.png" = "53c59ba6e8f5f7fb96fe6473bbfa4a9b8b47d7a1b011e78a12deb38edbd0bda5"
+"figures/details/power_flow/common_post_equilibrium.pdf" = "9b385ec5ee64da09bb089fd91dd5a11c50a33493752dacd335bb312f4b61eed0"
+
+["figures"."figures/details/power_flow/common_pre_equilibrium"]
+"datasets" = ["results/power_flow/common_pre_equilibrium"]
+"command" = "python scripts/power_flow.py"
+
+["figures"."figures/details/power_flow/common_pre_equilibrium"."files"]
+"figures/details/power_flow/common_pre_equilibrium.png" = "cfbcc5c6c1e866563960969b7234e3608ec8b4e9472fea0edb0989fb374c222e"
+"figures/details/power_flow/common_pre_equilibrium.pdf" = "16a696014ebae43708e014b2d27cacbb60844d2dbfd5bac8b9b9728264702033"
+
+["figures"."figures/details/time_response_ABC_long"]
+"datasets" = ["results/A", "results/B", "results/C"]
+"command" = "python scripts/plot.py --only time"
+
+["figures"."figures/details/time_response_ABC_long"."files"]
+"figures/details/time_response_ABC_long.png" = "0a8b6f4f2a16af6a00df5abe9e63219dd78b301443bbc1c02d782bb6914c3c77"
+"figures/details/time_response_ABC_long.pdf" = "08336332c0db088f0ee555ad85759db8561e946a3396444fa8910dd1c87f5550"
+
+["figures"."figures/paper/basin_A"]
+"datasets" = ["results/fault_basins/A", "results/A", "results/basins/A"]
+"command" = "python scripts/plot.py --only basins"
+
+["figures"."figures/paper/basin_A"."files"]
+"figures/paper/basin_A.png" = "5098c0d1e38466a4fbdef1f270980a312bd2b8a0b8a25e76dd9ab1e9af7beb79"
+"figures/paper/basin_A.pdf" = "94cc7c3f542dd92f0efa18c0fe6818c14ad40c747a8cca3232e69154a4efc5dd"
+
+["figures"."figures/paper/basin_B"]
+"datasets" = ["results/fault_basins/B", "results/B", "results/basins/B"]
+"command" = "python scripts/plot.py --only basins"
+
+["figures"."figures/paper/basin_B"."files"]
+"figures/paper/basin_B.png" = "ac9fa426ba6dec4bc9186127b3273d77b4c18fa8d34f896f0a411a69813a9aa0"
+"figures/paper/basin_B.pdf" = "9b1cf94dabc66a3c1787e26cdb4779891a544104e262539f92dcc8be97347e17"
+
+["figures"."figures/paper/basin_C"]
+"datasets" = ["results/fault_basins/C", "results/C", "results/basins/C"]
+"command" = "python scripts/plot.py --only basins"
+
+["figures"."figures/paper/basin_C"."files"]
+"figures/paper/basin_C.png" = "ee654f0bca7d42697b04a7282c302bbe27e349ef73a325f5d65a561fd02a83c5"
+"figures/paper/basin_C.pdf" = "1e199bea55befedc321d310acc40e174bd67ae6e325bf60b67d411f76934cd23"
+
+["figures"."figures/paper/system"]
+"datasets" = ["results/power_flow/common_post_equilibrium"]
+"command" = "python scripts/power_flow.py"
+
+["figures"."figures/paper/system"."files"]
+"figures/paper/system.png" = "20f07b62a3464d4b6b59caa9e3181ede06c281d0e82f0a5a3194109e368a705b"
+"figures/paper/system.pdf" = "8b3003ef8af90e947c2af0e11c39c5e0a2f84e62d0e5d39dab50beccc0667b9e"
+
+["figures"."figures/paper/time_response_ABC"]
+"datasets" = ["results/A", "results/B", "results/C"]
+"command" = "python scripts/plot.py --only time"
+
+["figures"."figures/paper/time_response_ABC"."files"]
+"figures/paper/time_response_ABC.png" = "5f2c7fa74254c8a6338b8461699f8709a4e3902ca447817ef13169aa1dc03026"
+"figures/paper/time_response_ABC.pdf" = "9208df0e62011623aac47e623ce517d0649a6d5327f06cbf870f69789f040703"

@@ -1,0 +1,62 @@
+"base_commit" = "907d0e922bd360fd576653fcbc56a0481ad88b1c"
+"limits" = ["No new parameter search or full 1000 s reintegration; A/B/C event paths were rerun through clearing+5 s.", "GitHub browser image/math rendering was not available; image contents, relative targets and math-fence syntax are checked locally."]
+
+["equivalence"]
+"base_commit" = "907d0e922bd360fd576653fcbc56a0481ad88b1c"
+"cases" = [{"observations" = 0.0, "state_conversion" = 0.0, "case" = "A", "voltages" = 0.0, "rhs" = 0.0, "classification_equal" = true, "five_second_event_waveform" = 0.0}, {"observations" = 0.0, "state_conversion" = 0.0, "case" = "B", "voltages" = 0.0, "rhs" = 0.0, "classification_equal" = true, "five_second_event_waveform" = 0.0}, {"observations" = 0.0, "state_conversion" = 0.0, "case" = "C", "voltages" = 0.0, "rhs" = 0.0, "classification_equal" = true, "five_second_event_waveform" = 0.0}]
+
+["full_waveform_classification"]
+"max_voltage_error" = 0.0
+"base_commit" = "907d0e922bd360fd576653fcbc56a0481ad88b1c"
+"max_rhs_error" = 0.0
+"rhs_samples" = 36
+"classifications" = [{"case" = "B", "saved_samples" = 50001, "all_machine_labels_equal" = true, "max_classification_metric_error" = 0.0}, {"case" = "A", "saved_samples" = 50001, "all_machine_labels_equal" = true, "max_classification_metric_error" = 0.0}, {"case" = "C", "saved_samples" = 50001, "all_machine_labels_equal" = true, "max_classification_metric_error" = 0.0}, {"case" = "C_D1_10", "saved_samples" = 50001, "all_machine_labels_equal" = true, "max_classification_metric_error" = 0.0}]
+
+["baseline_isolation"]
+"base_commit" = "907d0e922bd360fd576653fcbc56a0481ad88b1c"
+"replotted_figures_with_sources" = 31
+
+["baseline_isolation"."unchanged_baseline_file_counts"]
+"results/" = 646
+"figures/" = 62
+"provenance/reference_results/" = 34
+"inputs/" = 8
+
+["baseline_isolation"."stale_result_rejections"]
+"Stale input" = true
+"Stale model/code" = true
+"Stale saved data" = true
+
+["waveform_comparisons"]
+"all_passed" = true
+"comparison_count" = 230
+"max_absolute_error" = 3.829063643934205e-08
+
+["waveform_comparisons"."groups"]
+"A_accuracy" = 3.127386127843579e-10
+"B_accuracy" = 6.782101991120726e-09
+"C_D1_10_source_reproduction" = 3.052655905833035e-10
+"C_accuracy" = 3.829063643934205e-08
+"C_source_reproduction" = 4.632338512777778e-09
+"original_droop_A_migration" = 4.4415626732075e-10
+"original_droop_B_migration" = 6.533582563861273e-10
+
+["repository_checks"]
+"datasets" = 26
+"figures" = 31
+"relative_links" = 212
+"imports_changed_reference_data" = false
+"math_fences_balanced" = true
+
+["cli_case_check"]
+"case" = "C"
+"horizon_after_clearing_s" = 5.0
+"all_saved_native_states_equal" = true
+"differential_switch_jump" = 0.0
+"washout_switch_jump" = 0.0
+
+["replot"]
+"figure_count" = 31
+"pixel_identical_pngs" = ["figures/details/A_responses.png", "figures/details/B_responses.png", "figures/details/C_D1_10_responses.png", "figures/details/C_D1_comparison.png", "figures/details/C_responses.png", "figures/details/basin_local_A.png", "figures/details/basin_local_B.png", "figures/details/basin_local_C.png", "figures/details/power_flow/A_post_0s.png", "figures/details/power_flow/A_post_1s.png", "figures/details/power_flow/A_post_5s.png", "figures/details/power_flow/A_pre_equilibrium.png", "figures/details/power_flow/B_post_0s.png", "figures/details/power_flow/B_post_1s.png", "figures/details/power_flow/B_post_5s.png", "figures/details/power_flow/B_pre_equilibrium.png", "figures/details/power_flow/C_post_0s.png", "figures/details/power_flow/C_post_1s.png", "figures/details/power_flow/C_post_5s.png", "figures/details/power_flow/C_pre_equilibrium.png", "figures/details/power_flow/common_post_equilibrium.png", "figures/details/power_flow/common_pre_equilibrium.png", "figures/details/time_response_ABC_long.png", "figures/paper/system.png", "figures/paper/time_response_ABC.png"]
+"other_pngs" = ["figures/details/basin_A_wide.png", "figures/details/basin_B_wide.png", "figures/details/basin_C_wide.png", "figures/paper/basin_A.png", "figures/paper/basin_B.png", "figures/paper/basin_C.png"]
+"other_differences" = "Basin titles are generated from recorded settings and use the wording classified states; plot data, coordinate definitions, axis limits, units and legends are maintained."

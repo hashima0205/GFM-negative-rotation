@@ -1,0 +1,10 @@
+# Presentation settings; independent of numerical result identities.
+machine_colors = ["#202020", "#0072B2", "#D55E00", "#009E73"]
+machine_styles = ["-", "--", ":", "-."]
+short_time_s = [-0.2, 8.0]
+detail_time_s = [-0.2, 12.0]
+damping_time_s = [-0.2, 10.0]
+flow_post_times_s = [0.0, 1.0, 5.0]
+flow_comparison_post_s = 1.0
+fault_arrow_offsets_s = [0.04, 0.10]
+post_arrow_times_s = [0.1, 0.5, 1.0, 2.0, 4.0, 12.0, 24.0]

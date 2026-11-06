@@ -1,9 +1,9 @@
-include(joinpath(@__DIR__,"basins.jl"))
+include(joinpath(@__DIR__,"../src/study.jl"))
 function check_sections()
  records=[]
- for row in filter(r->r["case"] in ["A","B","C"],readcases(joinpath(ROOT,"inputs/cases.csv")))
+ for row in filter(r->r["case"] in STUDY["cases"]["main"],readcases(joinpath(ROOT,"inputs/cases.csv")))
   c=load_config(joinpath(ROOT,"inputs",row["config"]),row);s=make_stage(c,"post")
-  dir=joinpath(ROOT,"results/basins",row["case"])
+  dir=joinpath(ROOT,"results/basins",row["case"]);verify_reference(dir)
   target=vec(readdlm(joinpath(ROOT,"results",row["case"],"post_root.csv"),',',Float64))
   files=sort(filter(p->endswith(p,".toml"),readdir(joinpath(dir,"points");join=true)));@assert length(files)==49
   maxstate=0.;maxcoord=0.;maxvoltage=0.;maxalg=0.;labels=Dict{String,Int}()
@@ -36,8 +36,8 @@ function check_sections()
   @assert maxroot<1e-8
   push!(records,Dict("case"=>row["case"],"points"=>49,"max_initial_state_definition_error"=>maxstate,"max_coordinate_error"=>maxcoord,"max_reconstructed_voltage_error"=>maxvoltage,"max_algebraic_residual"=>maxalg,"max_root_residual"=>maxroot,"saddle_section_native_max_difference"=>saddle_mismatch,"classifications"=>labels))
  end
- mkpath(joinpath(ROOT,"results/validation"))
- open(joinpath(ROOT,"results/validation/basin_checks.toml"),"w") do io;TOML.print(io,Dict("cases"=>records));end
+ mkpath(joinpath(validation_output()))
+ open(joinpath(validation_output(),"basin_checks.toml"),"w") do io;TOML.print(io,Dict("cases"=>records));end
  println("BASIN_SECTION_CHECKS_OK ",records);records
 end
 if abspath(PROGRAM_FILE)==@__FILE__;check_sections();end

@@ -2,6 +2,18 @@
 
 These figures are retained for repository inspection; the paper candidates are in [figures/paper](../figures/paper/). Every listed figure has a PDF and PNG. All time responses use fixed Bus6 internal angles, seconds from clearing, the same machine colors and unprocessed individual-machine samples.
 
+## Paper candidates and shared sources
+
+| Figure | Data | PDF | Drawing command |
+|---|---|---|---|
+| Individual-machine A/B/C time responses | [A](../results/A/), [B](../results/B/), [C](../results/C/) | [PDF](../figures/paper/time_response_ABC.pdf) | `python scripts/plot.py --only time` |
+| Conditional section A | [Point states, labels, paths](../results/fault_basins/A/) | [PDF](../figures/paper/basin_A.pdf) | `python scripts/plot.py --only basins` |
+| Conditional section B | [Point states, labels, paths](../results/fault_basins/B/) | [PDF](../figures/paper/basin_B.pdf) | same |
+| Conditional section C | [Point states, labels, paths](../results/fault_basins/C/) | [PDF](../figures/paper/basin_C.pdf) | same |
+| System/scenario diagram | [Shared post-fault network](../results/power_flow/common_post_equilibrium/) | [PDF](../figures/paper/system.pdf) | `python scripts/power_flow.py` |
+
+Inputs are [case rows](../inputs/cases.csv), [physical values](../inputs/common.toml), [main section](../inputs/fault_basin.toml), [local section](../inputs/local_basin.toml) and [presentation](../inputs/figures.toml). [Saved figure identities](../figures/catalog.toml) link every figure to its data. These commands draw into `outputs/figures/` and do not rewrite numeric results or validation baselines. [Full workflow guide](RUNNING.md).
+
 ## Main and additional responses
 
 ### A
@@ -69,6 +81,6 @@ The common pre/post equilibria are shared positions of the different controllers
 | C | C_post_1s | [PNG](../figures/details/power_flow/C_post_1s.png) | [PDF](../figures/details/power_flow/C_post_1s.pdf) | [Data](../results/power_flow/C_post_1s/) |
 | C | C_post_5s | [PNG](../figures/details/power_flow/C_post_5s.png) | [PDF](../figures/details/power_flow/C_post_5s.pdf) | [Data](../results/power_flow/C_post_5s/) |
 
-The [README six-view comparison](../README.md#power-flow-comparison-three-cases-before-and-after-the-fault) pairs each case's pre-fault view with its clearing+1 s snapshot. Pre-fault views share the canonical dataset and are checked against the saved observations of A/B/C separately. [Six-view index](../results/power_flow/comparison.csv), [validation](../results/validation/power_flow_comparison.json). Redraw only these six with `python scripts/plot_flow_comparison.py`.
+The [README six-view comparison](../README.md#power-flow-comparison) pairs each case's pre-fault view with its clearing+1 s snapshot. Pre-fault views share the canonical dataset and are checked against the saved observations of A/B/C separately. [Six-view index](../results/power_flow/comparison.csv), [validation](../results/validation/power_flow_comparison.json). Redraw only these six with `python scripts/plot_flow_comparison.py`.
 
-Recreate and audit all flows with `python scripts/power_flow.py`; [export code](../scripts/power_flow.py), [single-line renderer](../scripts/network_figure.py), [network inputs](../inputs/common.toml). The plots distinguish equilibrium and dynamic time in their headers. Each data folder contains bus/line powers and `audit.json`, including current KCL, nodal complex-power and whole-network P/Q balance errors.
+Redraw all saved flows with `python scripts/power_flow.py`; run `python scripts/check_flows.py` for a new validation report; [flow processing](../src/flows.py), [single-line renderer](../src/network_plot.py), [network inputs](../inputs/common.toml). The plots distinguish equilibrium and dynamic time in their headers. Each data folder contains bus/line powers and `audit.json`, including current KCL, nodal complex-power and whole-network P/Q balance errors.
