@@ -4,6 +4,12 @@ This repository reproduces recovery and negative internal-angle rotation in one 
 
 The results are observations over a finite interval, **not a proof of permanent rotation**. All paper and additional physical-fault cases below use the compensated network; the pre-fault Bus5 voltage is **0.996594324 pu**.
 
+## Operating point and physical fault sequence
+
+All main cases start at the **same pre-fault operating point**: the arithmetic mean internal angle of Bus2/3/7 is −0.323414657 rad relative to fixed Bus6, their internal frequency deviation is zero, and Bus5 voltage is 0.996594324 pu. This point is not shifted to angle zero in the phase-plane figures.
+
+At absolute time 1.00 s the Bus4 consuming shunt fault is applied. At 1.15 s the shunt is removed and L7 (Bus4–5) opens. The capacitor remains connected throughout. The phase-plane figures follow the **pre-fault point → fault-on trajectory → clearing point → post-fault trajectory**. A recovers toward the post-fault stable point at mean angle −1.669678513 rad and zero frequency deviation. B/C leave toward negative rotation. The projected clearing coordinates differ because the outer controllers differ; the operating point and contingency are shared.
+
 ## Cases
 
 All four inverters have the same outer-control settings within each case. `mp=0.05` means 5% on the model power base. The common Q-filter time constant is 0.02 s.
@@ -37,44 +43,50 @@ python scripts/plot.py --only time
 
 The [1000 s comparison](figures/details/time_response_ABC_long.png), [individual voltage/current/P/Q responses](docs/DETAILS.md) and [D₁ comparison](figures/details/C_D1_comparison.pdf) are Git-only details.
 
-### Conditional initial-state classification: A
+### Conditional recovery region and physical fault path: A
 
-![Conditional initial-state classification A](figures/paper/basin_A.png)
+![A conditional section with physical recovery trajectory](figures/paper/basin_A.png)
 
-A uses Droop with τp=0.02 s. **All 49 tested initial conditions recover** within the adopted 1000 s test. A recovery trajectory is shown. No negative-running trajectory was found on this grid, so none is drawn for A. This does not establish global recovery outside the tested section.
+A uses Droop with τp=0.02 s. Its physical-fault trajectory starts at the pre-fault point and **recovers**. All 43 tested section initial states also recover; this does not establish global recovery. A is included as the physical recovery example, without requiring a negative-running orbit in its background grid.
 
-[Input](inputs/cases.csv) · [Classified points](results/basins/A/classification.csv) · [Full initial/final states and representative trajectories](results/basins/A/points/) · [Equilibria](results/basins/A/roots.csv) · [Section definition](results/basins/A/section.toml) · [PDF](figures/paper/basin_A.pdf) · [Plot code](scripts/plot.py)
+[Case input](inputs/cases.csv) · [Section input](inputs/fault_basin.toml) · [Classified points](results/fault_basins/A/classification.csv) · [Full initial/final states and projected section trajectories](results/fault_basins/A/points/) · [Physical trajectory data](results/fault_basins/A/physical_fault_projection.csv) · [Anchors](results/fault_basins/A/anchors.csv) · [Equilibria](results/basins/A/roots.csv) · [PDF](figures/paper/basin_A.pdf) · [Plot code](scripts/plot_fault_basins.py)
 
-### Conditional initial-state classification: B
+### Conditional recovery region and physical fault path: B
 
-![Conditional initial-state classification B](figures/paper/basin_B.png)
+![B conditional section with physical negative-rotation trajectory](figures/paper/basin_B.png)
 
-B uses Droop with τp=1.00 s. The tested section contains **30 recovery and 19 negative-running points**. Recovery and negative-running representative trajectories are plotted. Relative to A, only τp changes.
+B uses Droop with τp=1.00 s. Its physical-fault trajectory starts at the same pre-fault point and **rotates negatively**. Only τp differs from A. Its 43 background points were freshly integrated with B's own parameters and the section below.
 
-[Input](inputs/cases.csv) · [Classified points](results/basins/B/classification.csv) · [Full initial/final states and representative trajectories](results/basins/B/points/) · [Equilibria](results/basins/B/roots.csv) · [Section definition](results/basins/B/section.toml) · [PDF](figures/paper/basin_B.pdf) · [Plot code](scripts/plot.py)
+[Case input](inputs/cases.csv) · [Section input](inputs/fault_basin.toml) · [Classified points](results/fault_basins/B/classification.csv) · [Full initial/final states and projected section trajectories](results/fault_basins/B/points/) · [Physical trajectory data](results/fault_basins/B/physical_fault_projection.csv) · [Anchors](results/fault_basins/B/anchors.csv) · [Equilibria](results/basins/B/roots.csv) · [PDF](figures/paper/basin_B.pdf) · [Plot code](scripts/plot_fault_basins.py)
 
-### Conditional initial-state classification: C
+### Conditional recovery region and physical fault path: C
 
-![Conditional initial-state classification C](figures/paper/basin_C.png)
+![C conditional section with physical negative-rotation trajectory](figures/paper/basin_C.png)
 
-C uses VSM with H=2.5 s, mp=5%, D₁=0, D₂=100 and ωD=50 s⁻¹. The tested section contains **33 recovery and 16 negative-running points**. Recovery and negative-running representative trajectories are plotted. The network and inner controls match A/B.
+C uses VSM with H=2.5 s, mp=5%, D₁=0, D₂=100 and ωD=50 s⁻¹. Its physical-fault trajectory starts at the same pre-fault point and **rotates negatively**. Its 43 background points were freshly integrated with C's own parameters and the section below.
 
-[Input](inputs/cases.csv) · [Classified points](results/basins/C/classification.csv) · [Full initial/final states and representative trajectories](results/basins/C/points/) · [Equilibria](results/basins/C/roots.csv) · [Section definition](results/basins/C/section.toml) · [PDF](figures/paper/basin_C.pdf) · [Plot code](scripts/plot.py)
+[Case input](inputs/cases.csv) · [Section input](inputs/fault_basin.toml) · [Classified points](results/fault_basins/C/classification.csv) · [Full initial/final states and projected section trajectories](results/fault_basins/C/points/) · [Physical trajectory data](results/fault_basins/C/physical_fault_projection.csv) · [Anchors](results/fault_basins/C/anchors.csv) · [Equilibria](results/basins/C/roots.csv) · [PDF](figures/paper/basin_C.pdf) · [Plot code](scripts/plot_fault_basins.py)
 
-For all three classification figures:
+The three main phase-plane figures use the historical slack-reference layout:
 
-- The horizontal coordinate is the **arithmetic mean of the unwrapped internal angles of Bus2/3/7**, relative to fixed slack Bus6, in radians. Zero is the slack angle; the stable-equilibrium angle is **not subtracted**.
-- The vertical coordinate is the arithmetic mean of their **internal frequency deviations from 60 Hz**, in Hz. Zero is nominal frequency. Blue points recover; orange points meet the finite-time negative-running criterion. Gray denotes unresolved points if any occur. Colors classify the sampled initial conditions, not every location between them; no exact boundary is inferred or interpolated.
-- The section starts from the case's post-fault stable equilibrium. Bus2/3/7 internal angles receive one common shift, and their complex Vc/If/Ig states rotate by that shift. Their initial internal frequency deviations are set equally to the requested value. Bus1, Q-filter states and dq PI-integrator states remain at their post-fault stable values. **All four VSM washout states start at z=0**, including at nonzero imposed frequency. The other algebraic bus voltages are solved exactly, rather than held fixed.
-- A star marks the stable equilibrium on the section. The cross marks the **projection of the independently solved full saddle**, which generally lies off the section because its other states differ. It need not be a boundary point of this section. All three cases have a verified saddle with one unstable eigenvalue.
-- The curves are projections of trajectories **launched from the defined section**. They subsequently leave that section. The physical-fault trajectory is not overlaid on these maps. These are finite-time, conditional classification maps, not the complete high-dimensional attraction basin.
-- The same 7×7 coordinates are used: mean angle −1.669678513 ± 0.08 rad, and mean frequency deviations −0.04, −0.015, −0.005, 0, 0.005, 0.015, 0.04 Hz. Initial requested/actual coordinates, full states, classification settings and solver outcomes are saved for every point.
+- The horizontal coordinate is the **arithmetic mean of the unwrapped internal angles of Bus2/3/7**, relative to fixed Bus6, in radians. Neither the pre-fault nor the post-fault angle is subtracted. The vertical coordinate is their mean internal frequency deviation from 60 Hz, in Hz. Axes are common: −2.25 to −0.2 rad and −1.25 to 0.08 Hz.
+- The blue triangle is the pre-fault operating point, purple is the fault-on path, the white circle is the clearing state, and black is the post-fault path through 30 s after clearing. Arrows indicate time direction. B/C continue left out of the main view; [wide views](docs/DETAILS.md#phase-plane-details) show the full first 30 s. Physical-fault classifications still use 1000 s.
+- For the **background initial-state section**, start at the post-fault stable equilibrium and change only the three remote internal angles by a common shift and their internal frequency/P-filter coordinates to a common requested deviation. **All other differential states remain initially at the post-fault root:** unrotated Vc/If/Ig, dq PI-integrator states, Qf, Bus1 and every VSM washout z (zero to root-solver precision). After initialization, every differential state evolves. Algebraic bus voltages are reconstructed exactly.
+- The same 43 coordinates are tested per case: seven angles × five frequencies (−1.2, −0.6, −0.15, 0, 0.05 Hz), plus four angles × two frequencies (±0.01 Hz). Exact angles and horizons are in [fault_basin.toml](inputs/fault_basin.toml). Initial requested/actual coordinates and complete native states are saved for every point; no old classification labels are reused.
+- Blue/orange points indicate recovery/negative running. A filled triangle summarizes three equally classified vertices; a hatched triangle has mixed or unresolved vertex outcomes. **Triangle interiors are not independently classified and no exact boundary is inferred.** The saved triangulation is a display aid, matching the earlier figure style.
+- A star marks the post-fault stable equilibrium. The cross is the **projection of a full saddle with one unstable eigenvalue**. It generally lies outside the initial-state section. The real fault path is also a projection outside that section: its outcome cannot be determined from background color at its clearing coordinates alone.
 
-Recompute all three maps and redraw their PDFs/PNGs:
+The earlier publication's 49-point plots used a much smaller angle/frequency range, rotated remote electrical states, and showed section-launched trajectories without the physical fault path. They describe a **different section**, and are now retained as [local diagnostic figures](docs/DETAILS.md#phase-plane-details). The historical D₁=10/20 reference used mp=10%; only its layout and initial-state prescription are followed here. Main parameters remain mp=5%, with no D₁=20 adopted. See [the comparison and provenance](docs/BASIN_VIEWS.md).
+
+**C is dynamically equivalent to the historical D₁=10 side:** its nominal damping coefficient is 1/0.05+0=20, equal to 1/0.10+10=20, with the same H, D₂ and ωD. All 43 independently recomputed C labels match that historical side (19 recovery, 24 negative running). B has 13 recovery / 30 negative-running points; A has 43 recovery points. The physical C path also matches the historical path at common timestamps through 30 s. [Section/equation checks](results/validation/fault_basin_checks.toml) · [Trajectory checks](results/validation/basin_view_trajectory_checks.json).
+
+Recompute the main sections, check them and redraw their PDFs/PNGs:
 
 ```bash
-JULIA_NUM_THREADS=4 OPENBLAS_NUM_THREADS=1 julia --project=. scripts/basins.jl
+JULIA_NUM_THREADS=8 OPENBLAS_NUM_THREADS=1 julia --project=. scripts/fault_basins.jl
+julia --project=. scripts/check_fault_basins.jl
 python scripts/plot.py --only basins
+python scripts/verify_basin_views.py
 ```
 
 ### Shared single-line system diagram
@@ -184,6 +196,7 @@ JULIA_NUM_THREADS=1 julia --project=. scripts/run.jl cases.csv
 julia --project=. scripts/check_equations.jl
 julia --project=. scripts/check_conditions.jl
 julia --project=. scripts/check_basins.jl
+julia --project=. scripts/check_fault_basins.jl
 
 # Stricter integration of all three main cases.
 JULIA_NUM_THREADS=1 julia --project=. scripts/run.jl cases.csv A,B,C --strict
@@ -195,7 +208,9 @@ JULIA_NUM_THREADS=1 julia --project=. scripts/run.jl original_cases.csv original
 python scripts/validate.py
 python scripts/compact_validation.py
 
-# Independent conditional-section integrations; saved points are resumed by signature.
+# Main historical-style sections, and the separate local diagnostic section.
+# Their saved points are resumed by their own model/input signatures.
+JULIA_NUM_THREADS=8 julia --project=. scripts/fault_basins.jl
 JULIA_NUM_THREADS=4 julia --project=. scripts/basins.jl
 
 # Rebuild PDF/PNG figures from saved data; no integration is needed for these commands.
@@ -221,6 +236,7 @@ The committed validation records include:
 - Original Droop replay, C and C_D1_10 source reproduction, and all three stricter main integrations passed **230 waveform comparisons**. The largest observed absolute difference was **3.83×10⁻⁸ in the corresponding observable's own unit**; the per-channel units and errors are in [waveform_comparisons.csv](results/validation/waveform_comparisons.csv).
 - Main-case network-constraint residuals are below 10⁻¹³. Differential states and VSM washout states are continuous at both switches, with recorded jumps zero.
 - Stable equilibria and one-unstable-direction saddles were solved and checked for A/B/C. Each section initial coordinate was checked against the requested coordinate after algebraic reconstruction.
+- All 129 revised main-section initial states satisfy the frozen-state prescription. C's 43 labels match the historical equivalent D₁=10 side; main physical-path exports preserve the original samples and switching continuity.
 - Matched-time power-flow snapshots pass bus-current, bus-power and whole-network active/reactive-power balance checks. The network boundary is at the inverter terminals, not at the internal voltage sources.
 
 [Detailed verification, original/common-condition changes, source commits and limitations](docs/VALIDATION.md). Original-condition Droop replay is retained only as source-migration evidence, not as a paper case. The original VSM/Droop repositories, handoff and manuscript are not required at runtime.
@@ -231,11 +247,11 @@ The committed validation records include:
 |---|---|
 | `src/model.jl` | Shared network, LCL, PI, limiter, explicit Droop/VSM equations and equilibrium functions |
 | `inputs/` | Canonical common and original-Droop inputs, cases and equilibrium seeds |
-| `scripts/run.jl`, `scripts/basins.jl` | Physical-fault and conditional-section integration |
+| `scripts/run.jl`, `scripts/fault_basins.jl`, `scripts/basins.jl` | Physical-fault, historical-style section and local-section integration |
 | `scripts/check_equations.jl`, `scripts/validate.py` | Equation/source reproduction and numerical comparisons |
 | `scripts/plot.py`, `scripts/power_flow.py`, `scripts/network_figure.py` | Saved-data plotting and audited single-line figures |
 | `results/A,B,C,C_D1_10/` | Main and additional detailed results |
-| `results/basins/`, `results/power_flow/`, `results/validation/` | Section states/classifications, snapshots and validation evidence |
+| `results/fault_basins/`, `results/basins/`, `results/power_flow/`, `results/validation/` | Section states/classifications, snapshots and validation evidence |
 | `figures/paper/` | Publication candidates, each as PDF and PNG |
 | `figures/details/`, `docs/DETAILS.md` | Git-only supplementary figures and their index |
 | `provenance/` | Source identities, parameter alignment and compact source reference data |

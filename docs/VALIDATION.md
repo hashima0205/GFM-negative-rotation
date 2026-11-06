@@ -64,7 +64,7 @@ At the 150 sampled legacy VSM states (75 each for C and C_D1_10), the largest sh
 
 Standard Rodas5P tolerances are rtol=10⁻⁹, atol=10⁻¹¹, dtmax=0.005 s; stricter main-case runs use 10⁻¹⁰, 10⁻¹², 0.0025 s. All main-case machine classifications are unchanged. Internal accepted/rejected step counts are in each `events.csv`; saved output intervals are separately specified.
 
-## Equilibria and conditional sections
+## Equilibria and local diagnostic sections
 
 | Case | Stable mean internal angle [rad] | Saddle projected mean angle [rad] | Saddle unstable eigenvalue [s⁻¹] | Recovery / negative / unresolved points |
 |---|---:|---:|---:|---|
@@ -74,7 +74,15 @@ Standard Rodas5P tolerances are rtol=10⁻⁹, atol=10⁻¹¹, dtmax=0.005 s; st
 
 All three full-state saddles have exactly one positive-real-part eigenvalue. Their projections are not asserted to lie on the initial-state section. Each grid point has a full native initial/final state and all bus-voltage values, with requested/actual mean angle/frequency checked. VSM z is explicitly zero initially on the section, not set to the imposed ν. Other coordinates are prescribed in `section.toml` and in the README. The 147 classification points were freshly integrated using the shared paper parameters; no transferred basin labels were reused.
 
-No negative-running example was found among the 49 A-section points, so an A negative-running representative is not fabricated. A wider section or a different choice of other initial states has not been searched here. These finite-time local maps do not establish an exact attraction boundary or explain the fault outcome from two projected coordinates alone.
+No negative-running example was found among these 49 A local-section points. The revised main figures use the separate, wider frozen-electrical-state section described below. These finite-time local maps do not establish an exact attraction boundary or explain the fault outcome from two projected coordinates alone.
+
+## Revised main sections and physical fault paths
+
+The main phase-plane figures were revised to show the actual pre-fault point, fault-on path, clearing state and post-fault path. This uses the already validated physical trajectories without changing simulation inputs. The background is a newly integrated 43-point section per case: Vc/If/Ig and all other non-angle/non-frequency differential states remain initially at the post-fault root. It differs from the local diagnostic section above. The current mp=5% parameters are retained; the historical mp=10%, D1=10/20 figure supplies only the layout and section prescription.
+
+Full initial/final states, point trajectories, per-machine labels, display triangles and physical-path projection data are in [results/fault_basins](../results/fault_basins/). [State/constraint verification](../results/validation/fault_basin_checks.toml), [counts and plotting checks](../results/validation/fault_basin_plot_checks.json), [definitions and provenance](BASIN_VIEWS.md). All points use 1000 s and the existing classification rules. Colored triangle interiors remain untested; actual fault trajectories and saddles are projections outside the section.
+
+The revised counts are A: 43 recovery; B: 13 recovery / 30 negative running; C: 19 recovery / 24 negative running. All 43 C labels match the historical mp=10%, D1=10 side, whose effective nominal damping equals current C's 20. Their native initial-state differences are below 1.56×10⁻¹⁵ and same-state RHS differences are zero. At 1903 common saved physical-path timestamps, angle/frequency differences are below 1.5×10⁻¹¹ rad / 5×10⁻¹² Hz. [Trajectory export and historical comparison](../results/validation/basin_view_trajectory_checks.json).
 
 ## Network power flows
 
@@ -85,7 +93,7 @@ Pfrom/Qfrom and Pto/Qto are positive **from their respective buses into the line
 ## Limits of this release
 
 - Main and additional physical-fault trajectories cover 1000 s after clearing. This is finite-time evidence.
-- Section maps cover only the 49 declared points per case at 1000 s. A has no negative-running representative on this grid; unsampled regions and alternative hidden-state prescriptions remain untested.
+- Main section maps cover 43 declared points per case at 1000 s; separate local diagnostics cover 49 points per case. Unsampled regions and other hidden-state prescriptions remain untested. A's physical response is a recovery example.
 - The inverter model is balanced and averaged, with the inherited current-command limiter. No switching, DC-source/SoC dynamics or additional PI-energy mechanism has been introduced.
 - No physical MVA ratings are assigned. The model bases and parameter units must be retained when transferring the coefficients to a different installation.
 - The source case CSV was uncommitted; its checksum and code commit are both retained rather than assigning an unsupported source execution commit.

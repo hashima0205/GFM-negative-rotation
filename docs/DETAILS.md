@@ -36,6 +36,18 @@ These figures are retained for repository inspection; the paper candidates are i
 
 Recreate the above with `python scripts/plot.py --only time`.
 
+## Phase-plane details
+
+The main figures start at the actual pre-fault state and include the fault-on and post-fault paths. Wide views use a common −150 to 0 rad range to show the full first 30 s: A recovers, B/C continue negatively. Frequency limits, markers, stage colors and background match the main views.
+
+| Case | First-30-s wide view | Separate local section diagnostic |
+|---|---|---|
+| A | [PNG](../figures/details/basin_A_wide.png) · [PDF](../figures/details/basin_A_wide.pdf) | [PNG](../figures/details/basin_local_A.png) · [PDF](../figures/details/basin_local_A.pdf) |
+| B | [PNG](../figures/details/basin_B_wide.png) · [PDF](../figures/details/basin_B_wide.pdf) | [PNG](../figures/details/basin_local_B.png) · [PDF](../figures/details/basin_local_B.pdf) |
+| C | [PNG](../figures/details/basin_C_wide.png) · [PDF](../figures/details/basin_C_wide.pdf) | [PNG](../figures/details/basin_local_C.png) · [PDF](../figures/details/basin_local_C.pdf) |
+
+The 49-point local diagnostic uses rotated initial Vc/If/Ig, small coordinate ranges and section-launched curves. It is **not a magnification of the revised background**; its results are unchanged. [Definitions and differences](BASIN_VIEWS.md). Replot main/wide views with `python scripts/plot.py --only basins`, local diagnostics with `--only local-basins`. [Main input](../inputs/fault_basin.toml), [main data](../results/fault_basins/), [local data](../results/basins/).
+
 ## Equilibrium and matched-time dynamic power flow
 
 The common pre/post equilibria are shared positions of the different controllers at ν=0; their local stability is checked separately for each controller. Dynamic diagrams show saved states, not equilibrium solutions. Every bus label includes terminal-voltage magnitude [pu] and principal phase [rad]. Every active branch lists signed P/Q from each end into the branch [pu]. Blue/green arrows denote P/Q.

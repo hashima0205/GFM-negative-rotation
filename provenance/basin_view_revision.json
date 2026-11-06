@@ -1,0 +1,83 @@
+{
+  "requested_reference": "vsm_basin_slack_rotation_recovery_D1_10_20",
+  "identified_source": "studies/h2p5_bus5_basins/basins_slack.png and its source/definition files",
+  "historical_mp": 0.1,
+  "current_mp": 0.05,
+  "historical_D1": [
+    10,
+    20
+  ],
+  "current_main_cases": [
+    "A",
+    "B",
+    "C"
+  ],
+  "original_publication_commit": "1cfef17547efd68cffd7b8d7e4fb38aea637ec35",
+  "reused": [
+    "Display limits and stage-colored actual fault trajectory convention",
+    "Frozen-electrical-state initial-section prescription",
+    "43 absolute sampling coordinates from the shared equilibrium network"
+  ],
+  "not_reused": [
+    "Classification labels",
+    "Historical D1=10/20 operating-control parameters",
+    "Historical event trajectories"
+  ],
+  "source_sha256": {
+    "README.md": "9a01c2de408f371d84d0a5f7f1b24c52f8a7985d9b7c2874b4cb5044b065921f",
+    "definition.json": "044b935e6750eb85e2c14fe34a5578cab9cd78369e1fd7860bf7e6d741d19d71",
+    "slack_definition.json": "16a49c7f09a8e1dbe73976ba04f7d1bd60554ff9036aeb35dc7705b5244072b3",
+    "plot_slack_basins.py": "5d1293e5325e8e3af4af46e6c7db005547b6e90d116248dd290cb8c63a2620f2",
+    "run_basins.jl": "4659eaea033730089cb7fb2ae7d6ca9347e5d10b2fb9ffada5371fc824e6aeb1",
+    "basins_slack.png": "7a348ad291ad937ccad8a1a90a378311fd921e258272fede8b2d3326c1ec30d5",
+    "trajectory_slack_D1_10.csv": "6184fd13c10a5801cfedb63f38cea6b16fd240bed6aa3a4dbf9b58a9340d5079",
+    "samples.csv": "30e3ac78f48740b49a60413b6887d963079d4b2373898ecf6a284b87e43b37d3"
+  },
+  "initial_source_sha256": {
+    "D1_10_p001/initial.csv": "bd403fedcde61bfd217193b729286ea287f9c865313f3ffbd363a1ca098669f5",
+    "D1_10_p002/initial.csv": "f3e07e88c8fbfcbb2244974959caed85d2a975636bee9b141d7b060f17ce5ce5",
+    "D1_10_p003/initial.csv": "45e2df9cd4c4ca95c0d35cb42536148ce8c03de9c8b5913674ebcefd0ee2d652",
+    "D1_10_p004/initial.csv": "225039f8215f525188b92f801514b1e59133345fcf3306335a8e2f00145588c9",
+    "D1_10_p005/initial.csv": "75ff0cff40cf318ba8e30fd25432348b536fd7cfa5147d87fbc40ec67bebc9ef",
+    "D1_10_p006/initial.csv": "30756dfad79a8d5c6a222956f8305268b3af3d3b6b25b1834f320e4f124d9933",
+    "D1_10_p007/initial.csv": "a2803140ac2127a2f72f06a2467eec0f48d19e631714b367c4506d5b9c18f4eb",
+    "D1_10_p008/initial.csv": "b3d6a42022a1fb5bb7c5afc9c933a9a17b2b7c48ab30841a132728b534aa7607",
+    "D1_10_p009/initial.csv": "773ed19c1fc3c6989d89b23804f6e644a6c0a91fb4b262e87ac61931d2b799c9",
+    "D1_10_p010/initial.csv": "7326a3255721fbbfcc824d2cf1ac7b7f27a741cf4f73260041d407da159c5e2e",
+    "D1_10_p011/initial.csv": "60fdd7642382d109425d2ab9a94eb9d9c0740f12ad5d4197610fd01f9611ec41",
+    "D1_10_p012/initial.csv": "2ff51da2f90cd7105d401777a3e87118c503e8677b1b81e3f413d0d3e7006256",
+    "D1_10_p013/initial.csv": "b30435df0bfede21221832fe95e5b44ae73a2d39dce4c51a2a5905c170dd432d",
+    "D1_10_p014/initial.csv": "364ae3ed660e1e1c52a7548a8df841f6e493b3de77be94016d90520cf507d56e",
+    "D1_10_p015/initial.csv": "a6866b0bd6ce9bb3784f2e0d62e23356916904c27c852449806950681056760d",
+    "D1_10_p016/initial.csv": "9f18daf1d4428847e800985f3eec80b1d08542f509b2b021850ea5c200d55374",
+    "D1_10_p017/initial.csv": "a0d94968942eee4bc976d74972c9e09c54802231c700c965800df466e70bcbb0",
+    "D1_10_p018/initial.csv": "c09693e323a0c33456ca8a3723a872ab992967e662cc89091cbe91bb137d3d8e",
+    "D1_10_p019/initial.csv": "03f87af24acab5142ea64001dc93fd53f2958d3e4e8dd075f0a1ab22901cd9fd",
+    "D1_10_p020/initial.csv": "b4527471c16620cb448d90bc8fe1bf8f2d681bc4afb5ad621368a9cbf003c5e7",
+    "D1_10_p021/initial.csv": "8af059fa5c40b74dd3214810ed2d35703938b42e61ef7790291d3f687ff8ca75",
+    "D1_10_p022/initial.csv": "f2819c4d2efc652b87aa5b6905abdd976ee0b988ffffb42b1eb9cc1281c77d94",
+    "D1_10_p023/initial.csv": "6fab78bc18ab4296996c905121f5cea3f716e7b429519ffcccabd995980ebcf4",
+    "D1_10_p024/initial.csv": "212090ed517a313114a60e8bf305869a00d1fce4f73caba306a26a02f3f40c42",
+    "D1_10_p025/initial.csv": "90c91e25e08e13674c135db16f19e4a67b1f5c4a82e111ea6e81c4419f8c7010",
+    "D1_10_p026/initial.csv": "0196b58b6f4e47056798a6b9d3ede060598ed30e6f4f8213a5219d4779fd8000",
+    "D1_10_p027/initial.csv": "d01e859ecc9d976ef0774274fb41ff0084aad1d52fbde047393d88ef2c2f65f9",
+    "D1_10_p028/initial.csv": "9ffef09eb40c5961e35f113d46c208ea5450736a70807faa2cf43afdcc310a09",
+    "D1_10_p029/initial.csv": "05c394a19a8321b3cafb91b9c0f2e2a324db22adb648603122a0862e1d625994",
+    "D1_10_p030/initial.csv": "666a0cf18bd65e35e198f04e4962c712781ee8eba93e40f8a9a3b85a975935f1",
+    "D1_10_p031/initial.csv": "9927270bf5624ab4c0bfff1aac3263d95aae9c1a9cb55991870837338e87494a",
+    "D1_10_p032/initial.csv": "e9b5fb1ca468d5bd4c9d2faf26c1e4b9af37d7e244128a9d5d4e8d171b9fb4d1",
+    "D1_10_p033/initial.csv": "a7c4d1856f366908cc9e6f71d88e36cca5fc6923e541c6c75060436fa14c10c9",
+    "D1_10_p034/initial.csv": "73efe1bc67b97b51ebbc7a984e245405b8e5574effa632a97d7557b70209bfba",
+    "D1_10_p035/initial.csv": "1e2bc10add1bdc71b97c011bb7f65ed8fe2e0b9705fcf86e2951f38d7d43d854",
+    "D1_10_p036/initial.csv": "bbd654ffb5ceaa637ea76f880641204a3207db037d9fdb4af46b4d695b5b89df",
+    "D1_10_p037/initial.csv": "c1ac2e2315a4bc7d2660eae7b0ef78389ae374eb42bded777f83e509135ca65a",
+    "D1_10_p038/initial.csv": "9e5a418a93728f7aca64654bd2af76ae4dd3d7abcb8955772aa354e22c93241c",
+    "D1_10_p039/initial.csv": "33884c8d24effcb2d3a4dabc2c9cd8e0cbc3ddfa3f3e164b5bbb480cd922a681",
+    "D1_10_p040/initial.csv": "75c69e94395450b69ff4ffe5d2b3f59f1154285cf997e4cab0e65f59c10c625a",
+    "D1_10_p041/initial.csv": "ea8ef8b7f1cbd445c9ddb5c7acad410d478b4ff996c298c6573abfba32ea8890",
+    "D1_10_p042/initial.csv": "ffdb62400f63ec63192344237436fa99967bb52bafcee41ce2551f073caf2c32",
+    "D1_10_p043/initial.csv": "2a5a2950a240a3ec2e03234e2dc0de2ca41e23a56ba0b60bcd1373433e70767d"
+  },
+  "historical_D1_10_equivalence_to_C": "1/mp+D1: 10+10 = 20+0; H, D2, omega_d, network and inner controls equal; classification independently recomputed",
+  "reference_export": "Historical initial states mapped from legacy Pf to native nu using old mp=0.1; fault projection retains all original samples through 30 s and only selects columns."
+}

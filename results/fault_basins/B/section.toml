@@ -1,0 +1,10 @@
+frequency_reference = "60 Hz; arithmetic mean internal frequency deviations of buses 2,3,7"
+point_count = 43
+frozen_initial_states = "All other differential states, including unrotated Vc/If/Ig, all dq PI integrators, Qf, Bus1 and all VSM washout z, remain at the post-fault stable equilibrium. All states evolve after initialization."
+changed_states = "Only remote internal angles and frequency/P-filter coordinates; remote angle offsets are retained."
+horizon_s = 1000.0
+save_s = 0.2
+input = "inputs/fault_basin.toml"
+algebraic_variables = "Reconstructed exactly with the post-fault network; never frozen independently."
+angle_reference = "fixed slack Bus6; arithmetic mean unwrapped internal angles of buses 2,3,7"
+physical_fault_trajectory = "Separate projection of saved pre/fault/post observations; generally outside this initial-state section."

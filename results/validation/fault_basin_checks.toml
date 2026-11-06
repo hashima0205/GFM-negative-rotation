@@ -1,0 +1,50 @@
+[historical_D1_10_vs_C]
+current_mp = 0.05
+points = 43
+matched_labels = 43
+max_initial_native_difference = 1.5543122344752192e-15
+old_D1 = 10.0
+old_horizons = "30/100/300 s; new classification independently uses 1000 s"
+current_D1 = 0.0
+equal_effective_nominal_damping = 20.0
+max_same_state_RHS_difference = 0.0
+old_mp = 0.1
+
+[[cases]]
+points = 43
+case = "A"
+max_reconstructed_voltage_error = 0.0
+max_angle_frequency_kinematic_error = 4.440892098500626e-16
+max_initial_washout_z = 0.0
+max_coordinate_error = 2.220446049250313e-16
+max_initial_state_definition_error = 0.0
+max_algebraic_residual = 5.253654653572345e-15
+
+    [cases.classifications]
+    recovery = 43
+[[cases]]
+points = 43
+case = "B"
+max_reconstructed_voltage_error = 0.0
+max_angle_frequency_kinematic_error = 1.7763568394002505e-15
+max_initial_washout_z = 0.0
+max_coordinate_error = 2.220446049250313e-16
+max_initial_state_definition_error = 0.0
+max_algebraic_residual = 4.288483441141238e-15
+
+    [cases.classifications]
+    recovery = 13
+    negative_running = 30
+[[cases]]
+points = 43
+case = "C"
+max_reconstructed_voltage_error = 0.0
+max_angle_frequency_kinematic_error = 1.7763568394002505e-15
+max_initial_washout_z = 0.0
+max_coordinate_error = 2.220446049250313e-16
+max_initial_state_definition_error = 0.0
+max_algebraic_residual = 6.620737537031165e-15
+
+    [cases.classifications]
+    recovery = 19
+    negative_running = 24

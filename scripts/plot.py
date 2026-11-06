@@ -53,7 +53,7 @@ def main_time():
  axes[0].set_ylabel('Internal angle change [rad]');axes[1].set_ylabel('Frequency deviation [Hz]');axes[1].set_xlabel('Time from clearing [s]')
  for ax in axes:ax.grid(alpha=.2);ax.axvline(0,color='.5',ls=':',lw=.7)
  fig.legend(*axes[0].get_legend_handles_labels(),loc='upper center',ncol=4,fontsize=7,frameon=False,bbox_to_anchor=(.5,1.04));fig.tight_layout(rect=[0,0,1,.9]);save(fig,ROOT/'figures/details/C_D1_comparison')
-def basins():
+def local_basins():
  palette={'recovery':'#56B4E9','negative_running':'#D55E00','positive_running':'#CC79A7','unresolved':'#BBBBBB','numerical_failure':'#333333'}
  for case in ['A','B','C']:
   folder=ROOT/'results/basins'/case;files=sorted((folder/'points').glob('*.toml'))
@@ -80,9 +80,12 @@ def basins():
   ax.xaxis.set_major_locator(MaxNLocator(4));ax.xaxis.set_major_formatter(FormatStrFormatter('%.2f'))
   ax.set_title(case+' — conditional classification at 1000 s',fontsize=9);ax.grid(alpha=.15)
   ax.legend(loc='upper left',bbox_to_anchor=(1.02,1),fontsize=6,frameon=False)
-  save(fig,ROOT/'figures/paper'/f'basin_{case}')
+  save(fig,ROOT/'figures/details'/f'basin_local_{case}')
   pd.DataFrame([{k:v for k,v in p.items() if k not in ['initial_native','final_native','initial_bus_voltage_ri','final_bus_voltage_ri','machine_metrics']} for p in points]).to_csv(folder/'classification.csv',index=False)
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('--only',choices=['time','basins','all'],default='all');a=parser.parse_args()
+ parser=argparse.ArgumentParser();parser.add_argument('--only',choices=['time','basins','local-basins','all'],default='all');a=parser.parse_args()
  if a.only in ['time','all']:main_time()
- if a.only in ['basins','all']:basins()
+ if a.only in ['local-basins','all']:local_basins()
+ if a.only in ['basins','all']:
+  from plot_fault_basins import plot_all
+  plot_all()

@@ -1,0 +1,33 @@
+{
+  "physical_export_checks": [
+    {
+      "case": "A",
+      "rows": 1903,
+      "max_projection_export_error": 2.220446049250313e-16,
+      "max_internal_coordinate_switch_jump": 0.0
+    },
+    {
+      "case": "B",
+      "rows": 1903,
+      "max_projection_export_error": 2.842170943040401e-14,
+      "max_internal_coordinate_switch_jump": 0.0
+    },
+    {
+      "case": "C",
+      "rows": 1903,
+      "max_projection_export_error": 1.4210854715202004e-14,
+      "max_internal_coordinate_switch_jump": 0.0
+    }
+  ],
+  "historical_D1_10_vs_C": {
+    "matched_timestamps": 1903,
+    "max_angle_error_rad": 1.4168222151056398e-11,
+    "max_frequency_error_Hz": 4.6207482284899015e-12,
+    "time_matching": "same event stage and absolute timestamp rounded to 1e-8 s; no interpolation",
+    "old_mp": 0.1,
+    "old_D1": 10,
+    "current_mp": 0.05,
+    "current_D1": 0,
+    "effective_nominal_damping": 20
+  }
+}

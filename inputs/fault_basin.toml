@@ -1,0 +1,12 @@
+# Historical slack-reference view: only remote internal angles/frequencies change.
+# The listed absolute Bus6 angles reproduce the old sampling coordinates, not labels.
+angle_rad = [-1.94526015943723, -1.74526015943723, -1.66967851282528, -1.59526015943723, -1.44526015943723, -1.24526015943723, -1.04526015943723]
+frequency_Hz = [-1.2, -0.6, -0.15, 0.0, 0.05]
+local_angle_rad = [-1.74526015943723, -1.66967851282528, -1.59526015943723, -1.44526015943723]
+local_frequency_Hz = [-0.01, 0.01]
+horizon_s = 1000.0
+save_s = 0.2
+plot_xlim_rad = [-2.25, -0.2]
+plot_ylim_Hz = [-1.25, 0.08]
+wide_xlim_rad = [-150.0, 0.0]
+fault_trajectory_post_horizon_s = 30.0

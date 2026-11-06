@@ -1,0 +1,31 @@
+[
+  {
+    "case": "A",
+    "counts": {
+      "recovery": 43
+    },
+    "max_coordinate_error": 2.220446049250313e-16,
+    "max_frozen_state_error": 0.0,
+    "max_initial_algebraic_residual": 3.016049123162584e-15
+  },
+  {
+    "case": "B",
+    "counts": {
+      "negative_running": 30,
+      "recovery": 13
+    },
+    "max_coordinate_error": 2.220446049250313e-16,
+    "max_frozen_state_error": 0.0,
+    "max_initial_algebraic_residual": 3.016049123162584e-15
+  },
+  {
+    "case": "C",
+    "counts": {
+      "negative_running": 24,
+      "recovery": 19
+    },
+    "max_coordinate_error": 2.220446049250313e-16,
+    "max_frozen_state_error": 0.0,
+    "max_initial_algebraic_residual": 3.016049123162584e-15
+  }
+]
