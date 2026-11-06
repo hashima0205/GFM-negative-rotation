@@ -94,11 +94,35 @@ Redraw: `python scripts/plot.py --only basins`. [Wide and local diagnostic figur
 
 These repository detail figures pair each case's pre-fault equilibrium (absolute t=0 s) with its **saved dynamic state 1 s after clearing** (absolute t=2.15 s). The pre-fault flows share one dataset and are checked against each case separately. Post-fault snapshots are not equilibrium flows. Click an image for its full-size PNG; PDFs/data are in [the figure index](docs/DETAILS.md#equilibrium-and-matched-time-dynamic-power-flow).
 
-| Case | Pre-fault | Clearing +1 s |
-|---|---|---|
-| A | [![A pre](figures/details/power_flow/A_pre_equilibrium.png)](figures/details/power_flow/A_pre_equilibrium.png) | [![A post](figures/details/power_flow/A_post_1s.png)](figures/details/power_flow/A_post_1s.png) |
-| B | [![B pre](figures/details/power_flow/B_pre_equilibrium.png)](figures/details/power_flow/B_pre_equilibrium.png) | [![B post](figures/details/power_flow/B_post_1s.png)](figures/details/power_flow/B_post_1s.png) |
-| C | [![C pre](figures/details/power_flow/C_pre_equilibrium.png)](figures/details/power_flow/C_pre_equilibrium.png) | [![C post](figures/details/power_flow/C_post_1s.png)](figures/details/power_flow/C_post_1s.png) |
+**Case A — Droop, τp=0.02 s; recovery**
+
+Pre-fault equilibrium (absolute t=0 s):
+
+[![Case A: pre-fault equilibrium](figures/details/power_flow/A_pre_equilibrium.png)](figures/details/power_flow/A_pre_equilibrium.png)
+
+Dynamic state 1 s after clearing (absolute t=2.15 s):
+
+[![Case A: clearing +1 s](figures/details/power_flow/A_post_1s.png)](figures/details/power_flow/A_post_1s.png)
+
+**Case B — Droop, τp=1.00 s; negative rotation**
+
+Pre-fault equilibrium (absolute t=0 s):
+
+[![Case B: pre-fault equilibrium](figures/details/power_flow/B_pre_equilibrium.png)](figures/details/power_flow/B_pre_equilibrium.png)
+
+Dynamic state 1 s after clearing (absolute t=2.15 s):
+
+[![Case B: clearing +1 s](figures/details/power_flow/B_post_1s.png)](figures/details/power_flow/B_post_1s.png)
+
+**Case C — VSM; negative rotation**
+
+Pre-fault equilibrium (absolute t=0 s):
+
+[![Case C: pre-fault equilibrium](figures/details/power_flow/C_pre_equilibrium.png)](figures/details/power_flow/C_pre_equilibrium.png)
+
+Dynamic state 1 s after clearing (absolute t=2.15 s):
+
+[![Case C: clearing +1 s](figures/details/power_flow/C_post_1s.png)](figures/details/power_flow/C_post_1s.png)
 
 Bus labels show |U| [pu] and principal phase to Bus6 [rad]. P arrows are blue; Q arrows green. Line-end `a / b` powers are positive **from each bus into the line**; their sum is line absorption. Device powers are positive injections. L7 is connected before the fault and open afterward. [Six-view index](results/power_flow/comparison.csv). Redraw: `python scripts/plot_flow_comparison.py`.
 
