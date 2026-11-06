@@ -144,37 +144,16 @@ def outer(kind):
 
 
 def inner():
-    fig,ax=canvas("Common inner control",5.7)
-    y=4.25
-    wire(ax,[(.3,y),(1.55,y)],r"$\mathbf{e}^*$")
-    summer(ax,1.8,y)
-    label(ax,1.43,y+.28,"+",10)
-    wire(ax,[(2.05,y),(2.55,y)])
-    box(ax,4,y,2.9,1.05,
-        r"$G_v(s)\mathbf{e}_v+F_v\mathbf{i}_g$"+"\n"+r"$+F_{vc}CJ\mathbf{v}_c$",size=12)
-    wire(ax,[(5.45,y),(6.0,y)])
-    box(ax,7,y,2,1.05,r"$\mathbf{i}_f^*=\alpha\mathbf{u}_i$"+"\nCurrent limiter",size=9)
-    wire(ax,[(8,y),(8.55,y)])
-    summer(ax,8.8,y)
-    label(ax,8.43,y+.28,"+",10)
-    wire(ax,[(9.05,y),(9.55,y)])
-    box(ax,11,y,2.9,1.05,
-        r"$G_i(s)\mathbf{e}_i+F_i\mathbf{v}_c$"+"\n"+r"$+F_{ic}L_fJ\mathbf{i}_f$",size=12)
-    wire(ax,[(12.45,y),(13,y)])
-    box(ax,14,y,2,1.05,"LCL / network",size=9)
-    label(ax,12.75,y+.45,r"$e^{j\delta}$",10)
-    wire(ax,[(14,y-.525),(14,2.4),(11.5,2.4)])
-    box(ax,10.6,2.4,1.8,.65,r"$e^{-j\delta}$",size=14)
-    wire(ax,[(9.7,2.4),(8.8,2.4),(8.8,y-.25)])
-    label(ax,8.3,2.7,r"$\mathbf{i}_f$")
-    label(ax,8.5,y-.4,"−",11)
-    node(ax,9.3,2.4)
-    wire(ax,[(9.3,2.4),(9.3,1.65),(1.8,1.65),(1.8,y-.25)])
-    label(ax,3,1.95,r"$\mathbf{v}_c$")
-    label(ax,1.5,y-.4,"−",11)
-    label(ax,1.5,y-.4,"−",11)
-    label(ax,8,.65,
-        r"$G_{v,i}(s)=K_{p(v,i)}+K_{i(v,i)}/s,\quad \mathbf{e}^*=(V^*,0),\quad J(v_d,v_q)=(-v_q,v_d)$",11)
+    """Functional blocks only; PI, feedforward and dq transforms are internal."""
+    fig,ax=canvas("Common voltage/current control",2.5)
+    y=1.25
+    wire(ax,[(.3,y),(1.9,y)],r"$V^*,\ \delta$")
+    box(ax,3.4,y,3,.9,"Voltage controller",size=10)
+    wire(ax,[(4.9,y),(6.0,y)])
+    box(ax,7.4,y,2.8,.9,"Current limiter",size=10)
+    wire(ax,[(8.8,y),(9.9,y)])
+    box(ax,11.4,y,3,.9,"Current controller",size=10)
+    wire(ax,[(12.9,y),(15.5,y)],"To LCL filter",at=(14.2,y+.33))
     return fig
 
 
