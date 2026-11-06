@@ -1,0 +1,7 @@
+case,stage,time_absolute_s,time_post_clearing_s,state_kind,control_conditions,source_data,source_observations,PNG,PDF
+A,pre,0.0,-1.15,equilibrium,"Droop: tau_p=0.02 s, mp=5%",results/power_flow/common_pre_equilibrium,results/A/observations.csv.gz,figures/details/power_flow/A_pre_equilibrium.png,figures/details/power_flow/A_pre_equilibrium.pdf
+A,post,2.15,1.0,saved dynamic snapshot,"Droop: tau_p=0.02 s, mp=5%",results/power_flow/A_post_1s,results/A/observations.csv.gz,figures/details/power_flow/A_post_1s.png,figures/details/power_flow/A_post_1s.pdf
+B,pre,0.0,-1.15,equilibrium,"Droop: tau_p=1.00 s, mp=5%",results/power_flow/common_pre_equilibrium,results/B/observations.csv.gz,figures/details/power_flow/B_pre_equilibrium.png,figures/details/power_flow/B_pre_equilibrium.pdf
+B,post,2.15,1.0,saved dynamic snapshot,"Droop: tau_p=1.00 s, mp=5%",results/power_flow/B_post_1s,results/B/observations.csv.gz,figures/details/power_flow/B_post_1s.png,figures/details/power_flow/B_post_1s.pdf
+C,pre,0.0,-1.15,equilibrium,"VSM: H=2.5 s, mp=5%, D1=0, D2=100",results/power_flow/common_pre_equilibrium,results/C/observations.csv.gz,figures/details/power_flow/C_pre_equilibrium.png,figures/details/power_flow/C_pre_equilibrium.pdf
+C,post,2.15,1.0,saved dynamic snapshot,"VSM: H=2.5 s, mp=5%, D1=0, D2=100",results/power_flow/C_post_1s,results/C/observations.csv.gz,figures/details/power_flow/C_post_1s.png,figures/details/power_flow/C_post_1s.pdf

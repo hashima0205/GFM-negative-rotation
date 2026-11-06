@@ -49,3 +49,5 @@ if __name__=='__main__':
    ig=[complex(row[f'b{b}_Ig_r_pu'],row[f'b{b}_Ig_i_pu']) for b in BUS]
    export(case,f'{case}_post_{tpost:g}s','post',ig,float(row.t_absolute_s))
  print('Created common schematic, 2 equilibrium and 9 matched-time dynamic flow figures')
+ from plot_flow_comparison import build_comparison
+ build_comparison()

@@ -103,6 +103,32 @@ python scripts/power_flow.py
 
 Matched-time dynamic power-flow figures at **0, 1 and 5 s after clearing** for each main case, plus shared pre/post-equilibrium flows, are in [the details index](docs/DETAILS.md). Dynamic snapshots and equilibrium flows are explicitly distinguished.
 
+### Power-flow comparison: three cases before and after the fault
+
+These six repository detail figures show each case **before the fault** (absolute t=0 s, pre-fault equilibrium) and **1.00 s after fault clearing** (absolute t=2.15 s, saved dynamic state). The post-fault columns use the same comparison time for A/B/C; they are transient snapshots, not post-fault equilibrium flows. A is the recovery case; B/C are the negative-rotation cases over the full 1000 s observation interval.
+
+Click a preview for its full-size PNG. Each image also has a vector PDF.
+
+| Case | Before fault: t=0 s | After clearing: +1.00 s |
+|---|---|---|
+| **A — Droop, τp=0.02 s** | [![A pre-fault flow](figures/details/power_flow/A_pre_equilibrium.png)](figures/details/power_flow/A_pre_equilibrium.png) [PDF](figures/details/power_flow/A_pre_equilibrium.pdf) | [![A clearing+1s flow](figures/details/power_flow/A_post_1s.png)](figures/details/power_flow/A_post_1s.png) [PDF](figures/details/power_flow/A_post_1s.pdf) |
+| **B — Droop, τp=1.00 s** | [![B pre-fault flow](figures/details/power_flow/B_pre_equilibrium.png)](figures/details/power_flow/B_pre_equilibrium.png) [PDF](figures/details/power_flow/B_pre_equilibrium.pdf) | [![B clearing+1s flow](figures/details/power_flow/B_post_1s.png)](figures/details/power_flow/B_post_1s.png) [PDF](figures/details/power_flow/B_post_1s.pdf) |
+| **C — VSM, H=2.5 s, D₁=0** | [![C pre-fault flow](figures/details/power_flow/C_pre_equilibrium.png)](figures/details/power_flow/C_pre_equilibrium.png) [PDF](figures/details/power_flow/C_pre_equilibrium.pdf) | [![C clearing+1s flow](figures/details/power_flow/C_post_1s.png)](figures/details/power_flow/C_post_1s.png) [PDF](figures/details/power_flow/C_post_1s.pdf) |
+
+All six retain mp=5% and Bus5 capacitive compensation B=1 pu. The three pre-fault flows are equal because their network and operating point are shared; only their case/control labels differ. They use one [canonical pre-fault dataset](results/power_flow/common_pre_equilibrium/), independently checked against each case's own saved observations. Post-fault data are separate: [A](results/power_flow/A_post_1s/), [B](results/power_flow/B_post_1s/), [C](results/power_flow/C_post_1s/). L7 is connected before the fault and open after clearing.
+
+Bus labels give voltage magnitude [pu] and principal phase relative to Bus6 [rad]. Blue arrows represent P and green arrows Q. Each line's `a / b` values are signed powers **from each respective bus into the line** [pu]; their sum is line absorption. Device P/Q are positive injections into the network. The plot headers identify equilibrium versus dynamic state and absolute time.
+
+[Six-view data/figure index](results/power_flow/comparison.csv) · [Case inputs](inputs/cases.csv) · [Network parameters](inputs/common.toml) · [Rendering code](scripts/network_figure.py) · [Comparison plotting code](scripts/plot_flow_comparison.py) · [Observation and P/Q balance checks](results/validation/power_flow_comparison.json).
+
+Redraw just these six figures from committed snapshot data, without running integrations:
+
+```bash
+python scripts/plot_flow_comparison.py
+```
+
+`python scripts/power_flow.py` also rebuilds the source snapshot exports and the six-view comparison.
+
 ## Model and parameters
 
 The common bus-voltage constraints are linear for the retained constant-impedance load and static lines. `src/model.jl` solves them exactly for the seven non-slack bus voltages. It retains all **52 differential states** of the original Droop DAE; VSM has **56 differential states**, including four washout states. The 14 eliminated algebraic variables are reconstructed at every observation. No dynamic state or inner-control time scale is removed.

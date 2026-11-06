@@ -56,6 +56,9 @@ The common pre/post equilibria are shared positions of the different controllers
 |---|---|---|---|---|
 | common | common_pre_equilibrium | [PNG](../figures/details/power_flow/common_pre_equilibrium.png) | [PDF](../figures/details/power_flow/common_pre_equilibrium.pdf) | [Data](../results/power_flow/common_pre_equilibrium/) |
 | common | common_post_equilibrium | [PNG](../figures/details/power_flow/common_post_equilibrium.png) | [PDF](../figures/details/power_flow/common_post_equilibrium.pdf) | [Data](../results/power_flow/common_post_equilibrium/) |
+| A | A_pre_equilibrium | [PNG](../figures/details/power_flow/A_pre_equilibrium.png) | [PDF](../figures/details/power_flow/A_pre_equilibrium.pdf) | [Shared data](../results/power_flow/common_pre_equilibrium/) |
+| B | B_pre_equilibrium | [PNG](../figures/details/power_flow/B_pre_equilibrium.png) | [PDF](../figures/details/power_flow/B_pre_equilibrium.pdf) | [Shared data](../results/power_flow/common_pre_equilibrium/) |
+| C | C_pre_equilibrium | [PNG](../figures/details/power_flow/C_pre_equilibrium.png) | [PDF](../figures/details/power_flow/C_pre_equilibrium.pdf) | [Shared data](../results/power_flow/common_pre_equilibrium/) |
 | A | A_post_0s | [PNG](../figures/details/power_flow/A_post_0s.png) | [PDF](../figures/details/power_flow/A_post_0s.pdf) | [Data](../results/power_flow/A_post_0s/) |
 | A | A_post_1s | [PNG](../figures/details/power_flow/A_post_1s.png) | [PDF](../figures/details/power_flow/A_post_1s.pdf) | [Data](../results/power_flow/A_post_1s/) |
 | A | A_post_5s | [PNG](../figures/details/power_flow/A_post_5s.png) | [PDF](../figures/details/power_flow/A_post_5s.pdf) | [Data](../results/power_flow/A_post_5s/) |
@@ -65,5 +68,7 @@ The common pre/post equilibria are shared positions of the different controllers
 | C | C_post_0s | [PNG](../figures/details/power_flow/C_post_0s.png) | [PDF](../figures/details/power_flow/C_post_0s.pdf) | [Data](../results/power_flow/C_post_0s/) |
 | C | C_post_1s | [PNG](../figures/details/power_flow/C_post_1s.png) | [PDF](../figures/details/power_flow/C_post_1s.pdf) | [Data](../results/power_flow/C_post_1s/) |
 | C | C_post_5s | [PNG](../figures/details/power_flow/C_post_5s.png) | [PDF](../figures/details/power_flow/C_post_5s.pdf) | [Data](../results/power_flow/C_post_5s/) |
+
+The [README six-view comparison](../README.md#power-flow-comparison-three-cases-before-and-after-the-fault) pairs each case's pre-fault view with its clearing+1 s snapshot. Pre-fault views share the canonical dataset and are checked against the saved observations of A/B/C separately. [Six-view index](../results/power_flow/comparison.csv), [validation](../results/validation/power_flow_comparison.json). Redraw only these six with `python scripts/plot_flow_comparison.py`.
 
 Recreate and audit all flows with `python scripts/power_flow.py`; [export code](../scripts/power_flow.py), [single-line renderer](../scripts/network_figure.py), [network inputs](../inputs/common.toml). The plots distinguish equilibrium and dynamic time in their headers. Each data folder contains bus/line powers and `audit.json`, including current KCL, nodal complex-power and whole-network P/Q balance errors.
