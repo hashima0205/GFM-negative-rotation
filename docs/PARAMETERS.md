@@ -76,7 +76,7 @@ V_{I,dq}=-F_{I,c}L_fW I_{f,dq}+K_{PI}(I^*_{f,dq}-I_{f,dq})+K_{II}\gamma_I+F_I V_
 
 Voltage PI gains have units pu current/pu voltage and pu current/(pu voltage·s). Current PI gains have units pu voltage/pu current and pu voltage/(pu current·s). Integrator states retain the corresponding error×seconds units. Feedforward and cross-coupling flags are all 1. No extra anti-windup loop or instantaneous actual-current clamp has been added.
 
-The Droop and VSM outer equations are in the [README](../README.md#model-and-parameters). `mp` has units pu frequency/pu power; Kp=ω0 mp is the equivalent dimensional P–f gain in (rad/s)/pu power. H is in seconds; D=1/mp, D1 and D2 are pu power/pu frequency. The washout pole ωD is in s⁻¹, with a 0.02 s time constant in C. H is not a Droop input. τp is not an independent VSM measurement-filter time constant.
+The Droop and VSM outer equations are in the [README](../README.md#control-models-and-cases). `mp` has units pu frequency/pu power; Kp=ω0 mp is the equivalent dimensional P–f gain in (rad/s)/pu power. H is in seconds; D=1/mp, D1 and D2 are pu power/pu frequency. The washout pole ωD is in s⁻¹, with a 0.02 s time constant in C. H is not a Droop input. τp is not an independent VSM measurement-filter time constant.
 
 The equations use one common model power base. Physical MVA/kV ratings are not inferred. In particular, a P command is not the device rating. The stated H and droop are on this model base.
 

@@ -1,4 +1,5 @@
 .work/
+outputs/
 __pycache__/
 *.pyc
 .julia/

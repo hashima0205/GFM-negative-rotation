@@ -1,0 +1,55 @@
+# Numerical and structural settings shared by the study. Physical values remain
+# in common.toml/original_droop.toml and the case CSVs.
+[network]
+gfm_buses = [1, 2, 3, 7]
+remote_buses = [2, 3, 7]
+slack_bus = 6
+load_bus = 5
+fault_bus = 4
+opened_lines = [7]
+branches = [[1,4],[4,6],[5,6],[3,5],[2,3],[2,5],[4,5],[2,8],[2,7],[7,8],[5,8]]
+command_norm_regularizer = 1e-6
+
+[solver]
+reltol = 1e-9
+abstol = 1e-11
+dtmax_s = 0.005
+maxiters = 100000000
+strict_reltol = 1e-10
+strict_abstol = 1e-12
+strict_dtmax_s = 0.0025
+pre_save_s = 0.01
+fault_save_s = 0.0005
+post_save_s = 0.02
+
+[classification]
+tail_max_s = 50.0
+tail_divisor = 3.0
+recovery_df_Hz = 1e-4
+recovery_phase_rad = 0.002
+recovery_width_rad = 0.005
+running_min_turns = 2.0
+running_tail_start = 0.4
+running_windows = 3
+running_window_turns = 0.2
+running_rate_turns_per_s = 1e-4
+
+[cases]
+main = ["A", "B", "C"]
+additional = ["C_D1_10"]
+damping_comparison = ["C", "C_D1_10"]
+source_vsm = ["C", "C_D1_10"]
+original = ["original_A", "original_B"]
+
+[initialization]
+minimum_prefault_load_voltage_pu = 0.98
+
+[seeds.main]
+pre = "inputs/pre_seed_legacy.csv"
+post = "inputs/post_seed_legacy.csv"
+[seeds.original_A]
+pre = "provenance/reference_results/droop_original_A_pre_initial.csv"
+post = "inputs/original_post_seed_legacy.csv"
+[seeds.original_B]
+pre = "provenance/reference_results/droop_original_B_pre_initial.csv"
+post = "inputs/original_post_seed_legacy.csv"

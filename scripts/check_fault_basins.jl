@@ -1,8 +1,8 @@
-include(joinpath(@__DIR__,"fault_basins.jl"))
+include(joinpath(@__DIR__,"../src/study.jl"))
 function check_frozen_sections()
     records=[];settings=TOML.parsefile(SECTION_INPUT);historical=Dict{String,Any}()
-    for row in filter(r->r["case"] in ["A","B","C"],readcases(joinpath(ROOT,"inputs/cases.csv")))
-        ctx=frozen_context(row);(;c,s,target,dir)=ctx
+    for row in filter(r->r["case"] in STUDY["cases"]["main"],readcases(joinpath(ROOT,"inputs/cases.csv")))
+        c=load_config(joinpath(ROOT,"inputs",row["config"]),row);s=make_stage(c,"post");dir=joinpath(ROOT,"results/fault_basins",row["case"]);verify_reference(dir);target=vec(readdlm(joinpath(ROOT,"results",row["case"],"post_root.csv"),',',Float64))
         files=sort(filter(p->endswith(p,".toml"),readdir(joinpath(dir,"points");join=true)))
         @assert length(files)==43
         maxstate=0.;maxcoord=0.;maxvoltage=0.;maxalg=0.;maxkinematic=0.;maxz=0.;labels=Dict{String,Int}()
@@ -44,7 +44,7 @@ function check_frozen_sections()
             historical=Dict("old_mp"=>oldc.mp,"old_D1"=>oldc.D1,"current_mp"=>c.mp,"current_D1"=>c.D1,"equal_effective_nominal_damping"=>1/c.mp+c.D1,"matched_labels"=>matches,"points"=>43,"max_initial_native_difference"=>maxinitial,"max_same_state_RHS_difference"=>maxrhs,"old_horizons"=>"30/100/300 s; new classification independently uses 1000 s")
         end
     end
-    open(joinpath(ROOT,"results/validation/fault_basin_checks.toml"),"w") do io;TOML.print(io,Dict("cases"=>records,"historical_D1_10_vs_C"=>historical));end
+    open(joinpath(validation_output(),"fault_basin_checks.toml"),"w") do io;TOML.print(io,Dict("cases"=>records,"historical_D1_10_vs_C"=>historical));end
     println("FROZEN_SECTION_CHECKS_OK ",records," HISTORICAL ",historical)
 end
 if abspath(PROGRAM_FILE)==@__FILE__;check_frozen_sections();end
