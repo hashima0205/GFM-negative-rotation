@@ -157,6 +157,41 @@ def inner():
     return fig
 
 
+def overview():
+    """GFM functional overview; inner feedback and dq transforms are grouped."""
+    fig,ax=canvas("GFM control structure",5.8)
+    y=3.6
+    # Grouping represents the actual closed inner-control subsystem.
+    ax.add_patch(Rectangle((3.8,2.75),7.45,1.8,facecolor="none",
+                          edgecolor=INK,linewidth=.8,linestyle="--"))
+    label(ax,7.5,4.28,"Inner control (dq frame)",10)
+    wire(ax,[(.15,y),(.9,y)])
+    label(ax,.65,4.23,r"$P^*,Q^*$"+"\n"+r"$V_{\rm set}$",9)
+    box(ax,2,y,2.2,.95,"Droop or VSM",size=10)
+    wire(ax,[(3.1,y),(4,y)],r"$V^*$")
+    box(ax,5,y,2,.8,"Voltage\ncontroller",size=10)
+    wire(ax,[(6,y),(6.5,y)])
+    box(ax,7.5,y,2,.8,"Current\nlimiter",size=10)
+    wire(ax,[(8.5,y),(9,y)])
+    box(ax,10,y,2,.8,"Current\ncontroller",size=10)
+    wire(ax,[(11,y),(12.05,y)])
+    box(ax,13,y,1.9,.95,"LCL filter",size=10)
+    wire(ax,[(13.95,y),(15.6,y)],"Grid",at=(15,y+.3))
+    # Angle sets the local frame for the entire inner-control subsystem.
+    wire(ax,[(2,4.075),(2,4.9),(9.8,4.9),(9.8,4.55)])
+    label(ax,5.9,5.12,r"$\delta$")
+    # Measurement bundle enters the inner subsystem; no internal PI shown.
+    wire(ax,[(13,3.125),(13,2.15),(8,2.15),(8,2.75)])
+    label(ax,10.5,2.4,r"$V_C,I_f,I_g$",10)
+    node(ax,13,2.15)
+    wire(ax,[(13,2.15),(13,1.1),(8,1.1)])
+    box(ax,6.8,1.1,2.4,.75,"Power measurement",size=9)
+    wire(ax,[(5.6,1.1),(2,1.1),(2,3.125)])
+    label(ax,3.6,1.37,r"$P,Q$",10)
+    label(ax,10.5,1.37,r"$V_C,I_g$",10)
+    return fig
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output",type=Path,
@@ -166,7 +201,8 @@ def main():
     plt.rcParams.update({"font.family":"DejaVu Serif","mathtext.fontset":"dejavuserif"})
     for name,draw in [("droop_control",lambda:outer("Droop")),
                       ("vsm_control",lambda:outer("VSM")),
-                      ("shared_inner_control",inner)]:
+                      ("shared_inner_control",inner),
+                      ("gfm_overview",overview)]:
         fig=draw()
         path=args.output/f"{name}.png"
         fig.savefig(path,dpi=400,facecolor="white",bbox_inches="tight",pad_inches=.08)
